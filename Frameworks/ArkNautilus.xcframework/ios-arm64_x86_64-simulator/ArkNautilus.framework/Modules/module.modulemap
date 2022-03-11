@@ -1,0 +1,6 @@
+framework module ArkNautilus {
+  umbrella header "ArkNautilus.h"
+
+  export *
+  module * { export * }
+}

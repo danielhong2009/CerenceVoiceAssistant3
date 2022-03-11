@@ -1,0 +1,18 @@
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+NS_SWIFT_NAME(DialogEventEnum)
+typedef NSString *const CRNDialogEventEnum NS_TYPED_ENUM NS_SWIFT_NAME(ArkNotification.EventType);
+
+extern CRNDialogEventEnum CRNDialogEventEnumConversationBegin;
+extern CRNDialogEventEnum CRNDialogEventEnumConversationEnd;
+extern CRNDialogEventEnum CRNDialogEventEnumSessionBegin;
+extern CRNDialogEventEnum CRNDialogEventEnumSessionEnd;
+extern CRNDialogEventEnum CRNDialogEventEnumPromptBegin;
+extern CRNDialogEventEnum CRNDialogEventEnumPromptEnd;
+extern CRNDialogEventEnum CRNDialogEventEnumSnoozingBegin;
+extern CRNDialogEventEnum CRNDialogEventEnumSnoozingEnd;
+
+
+NS_ASSUME_NONNULL_END

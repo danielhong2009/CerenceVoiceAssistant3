@@ -1,0 +1,12 @@
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+NS_SWIFT_NAME(DynamicContentTypeEnum)
+typedef NSString *const CRNDynamicContentTypeEnum NS_TYPED_ENUM NS_SWIFT_NAME(ArkAssistant.DynamicContentType);
+
+extern CRNDynamicContentTypeEnum CRNDynamicContentTypeEnumContact;
+extern CRNDynamicContentTypeEnum CRNDynamicContentTypeEnumMusic;
+extern CRNDynamicContentTypeEnum CRNDynamicContentTypeEnumApp;
+
+NS_ASSUME_NONNULL_END

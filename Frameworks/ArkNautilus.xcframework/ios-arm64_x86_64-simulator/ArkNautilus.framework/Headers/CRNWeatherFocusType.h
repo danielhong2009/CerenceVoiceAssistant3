@@ -1,0 +1,12 @@
+
+#import <Foundation/Foundation.h>
+
+
+NS_ASSUME_NONNULL_BEGIN
+NS_SWIFT_NAME(WeatherFocusType)
+typedef NSString *const CRNWeatherFocusType NS_TYPED_ENUM;
+extern CRNWeatherFocusType CRNWeatherFocusTypeCurrentConditions;
+extern CRNWeatherFocusType CRNWeatherFocusTypeDailyForecasts;
+extern CRNWeatherFocusType CRNWeatherFocusTypeHourlyForecasts;
+extern CRNWeatherFocusType CRNWeatherFocusTypeOutOfRange;
+NS_ASSUME_NONNULL_END

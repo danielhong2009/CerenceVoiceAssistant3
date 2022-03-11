@@ -1,0 +1,6 @@
+framework module Ark {
+  umbrella header "Ark.h"
+
+  export *
+  module * { export * }
+}

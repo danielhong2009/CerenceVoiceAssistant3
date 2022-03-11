@@ -1,0 +1,17 @@
+
+#import <Foundation/Foundation.h>
+
+
+NS_ASSUME_NONNULL_BEGIN
+NS_SWIFT_NAME(MediaPlayControlType)
+typedef NSString *const CRNMediaPlayControlType NS_TYPED_ENUM;
+extern CRNMediaPlayControlType CRNMediaPlayControlTypePrev;
+extern CRNMediaPlayControlType CRNMediaPlayControlTypeNext;
+extern CRNMediaPlayControlType CRNMediaPlayControlTypePause;
+extern CRNMediaPlayControlType CRNMediaPlayControlTypeStop;
+extern CRNMediaPlayControlType CRNMediaPlayControlTypeResume;
+extern CRNMediaPlayControlType CRNMediaPlayControlTypeReplay;
+extern CRNMediaPlayControlType CRNMediaPlayControlTypeFastForward;
+extern CRNMediaPlayControlType CRNMediaPlayControlTypeBackForward;
+extern CRNMediaPlayControlType CRNMediaPlayControlTypePlayRate;
+NS_ASSUME_NONNULL_END
