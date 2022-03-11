@@ -1,0 +1,9 @@
+{
+  "version": "Prompter 1.0",
+  "voice_data_path": [
+    {
+      "name": "tts_data",
+      "vocalizer_path": "../vocalizer"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "version": "VoConHigh 5.0",
+  "application": {
+    "name": "APP_ASR_WUW",
+    "input": [
+      {
+        "type": "asr",
+        "asr": {
+          "dccs_to_wait_for": [
+            {
+              "name": "DCC_ASR_CUSTOM_MAIN_WUW"
+            }
+          ],
+          "search": [
+            {
+              "name": "SEARCH_ASR_WUW",
+              "type": "static",
+              "static": {
+                "file_name": "wuw_asr.fcf",
+                "do_crc_check": "false"
+              },
+              "vocon_parameters": {
+                "LH_SEARCH_PARAM_TSILENCE": 100,
+                "LH_SEARCH_PARAM_MAXNBEST": 1,
+                "LH_SEARCH_PARAM_ACCURACY": 5000,
+                "0x00d7a258": 1
+              },
+              "connection": [
+                {
+                  "expansion_point": "slot:WUW#self_defined_wuw",
+                  "search": {
+                    "type": "dynamic",
+                    "dynamic": {
+                      "dynamic_content_consumer": "DCC_ASR_CUSTOM_MAIN_WUW",
+                      "search_name": "asr_custom_main_wuw_ctx"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

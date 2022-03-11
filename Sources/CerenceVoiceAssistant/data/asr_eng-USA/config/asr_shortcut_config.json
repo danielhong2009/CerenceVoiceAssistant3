@@ -1,0 +1,193 @@
+{
+  "asr_shortcut": {
+	"shortcut_with_nlu_intent_mapping": [
+		{
+		  "sentence" :  "previous song",
+		  "sentence_conf" : 9000,
+		  "domain" : "music",
+		  "intent" : "mediamusic:na:song",
+		  "slots" : [
+			{
+			  "name":"which",
+			  "value":"previous"
+			}
+		  ]
+		},
+		{
+		  "sentence" :  "previous tune",
+		  "sentence_conf" : 9000,
+		  "domain" : "general",
+		  "intent" : "generic:na",
+		  "slots" : [
+			{
+			  "name":"which",
+			  "value":"previous"
+			}
+		  ]
+		},
+		{
+		  "sentence" :  "next song",
+		  "sentence_conf" : 9000,
+		  "domain" : "music",
+		  "intent" : "mediamusic:na:song",
+		  "slots" : [
+			{
+			  "name":"which",
+			  "value":"next"
+			}
+		  ]
+		},
+		{
+		  "sentence" :  "next tune",
+		  "sentence_conf" : 9000,
+		  "domain" : "generic",
+		  "intent" : "generic:na",
+		  "slots" : [
+			{
+			  "name":"which",
+			  "value":"next"
+			}
+		  ]
+		},
+		{
+		  "sentence" :  "pause music",
+		  "sentence_conf" : 9000,
+		  "domain" : "media_general",
+		  "intent" : "media:pause",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "resume music",
+		  "sentence_conf" : 9000,
+		  "domain" : "media_general",
+		  "intent" : "media:resume",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "stop music",
+		  "sentence_conf" : 9000,
+		  "domain" : "music",
+		  "intent" : "mediamusic:stop",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "loop play",
+		  "sentence_conf" : 9000,
+		  "domain" : "music",
+		  "intent" : "mediamusic:turn_on_repeat:song",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "sequence play",
+		  "sentence_conf" : 9000,
+		  "domain" : "music",
+		  "intent" : "mediamusic:playall",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "shuffle play",
+		  "sentence_conf" : 9000,
+		  "domain" : "music",
+		  "intent" : "mediamusic:shuffle",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "volume up",
+		  "sentence_conf" : 9000,
+		  "domain" : "command_and_control",
+		  "intent" : "settings_and_control:increase:volume",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "volume down",
+		  "sentence_conf" : 9000,
+		  "domain" : "command_and_control",
+		  "intent" : "settings_and_control:decrease:volume",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "remaining distance",
+		  "sentence_conf" : 9000,
+		  "domain" : "ude",
+		  "intent" : "ude:get_distance",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "ETA",
+		  "sentence_conf" : 9000,
+		  "domain" : "ude",
+		  "intent" : "ude:get_duration",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "what's the ETA",
+		  "sentence_conf" : 9000,
+		  "domain" : "ude",
+		  "intent" : "ude:get_duration",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "open map",
+		  "sentence_conf" : 9000,
+		  "domain" : "web_app",
+		  "intent" : "web_app:open:app",
+		  "slots" : [{
+			"name":"app",
+			"value":"map"
+		  }]
+		},
+		{
+		  "sentence" :  "zoom in",
+		  "sentence_conf" : 9000,
+		  "domain" : "command_and_control",
+		  "intent" : "settings_and_control:increase:zoom",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "zoom out",
+		  "sentence_conf" : 9000,
+		  "domain" : "command_and_control",
+		  "intent" : "settings_and_control:decrease:zoom",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "traffic on",
+		  "sentence_conf" : 9000,
+		  "domain" : "ude",
+		  "intent" : "ude:traffic:open",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "traffic off",
+		  "sentence_conf" : 9000,
+		  "domain" : "ude",
+		  "intent" : "ude:traffic:close",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "close map",
+		  "sentence_conf" : 9000,
+		  "domain" : "web_app",
+		  "intent" : "web_app:close:app",
+		  "slots" : [{
+			"name":"app",
+			"value":"map"
+		  }]
+		},
+		{
+		  "sentence" :  "start recording",
+		  "sentence_conf" : 9000,
+		  "domain" : "command_and_control",
+		  "intent" : "camera:record",
+		  "slots" : []
+		},
+		{
+		  "sentence" :  "take photo",
+		  "sentence_conf" : 9000,
+		  "domain" : "command_and_control",
+		  "intent" : "camera:take_picture",
+		  "slots" : []
+		}
+	]
+  }
+}

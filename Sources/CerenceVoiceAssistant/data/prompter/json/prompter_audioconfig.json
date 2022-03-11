@@ -1,0 +1,92 @@
+{
+  "version": "AudioMgr 1.0",
+  "audio_scenario": [
+    {
+      "name": "PROMPTER_1_PLAY",
+      "audiopaths": [
+        [
+          "prompter1",
+          "prompter1_to_play"
+        ]
+      ]
+    },
+    {
+      "name": "PROMPTER_1_PCM",
+      "audiopaths": [
+        [
+          "prompter1",
+          "prompter1_to_pcm"
+        ]
+      ]
+    },
+    {
+      "name": "PROMPTER_2_PLAY",
+      "audiopaths": [
+        [
+          "prompter2",
+          "prompter2_to_play"
+        ]
+      ]
+    },
+    {
+      "name": "PROMPTER_2_PCM",
+      "audiopaths": [
+        [
+          "prompter2",
+          "prompter2_to_pcm"
+        ]
+      ]
+    }
+  ],
+  "module_config": [
+    {
+      "type": "AudioOutput",
+      "name": "prompter1_to_pcm",
+      "audio_format": {
+        "uses": "22khz_1ch"
+      }
+    },
+    {
+      "type": "AudioOutput",
+      "name": "prompter2_to_pcm",
+      "audio_format": {
+        "uses": "22khz_1ch"
+      }
+    },
+    {
+      "type": "AudioOutput",
+      "name": "prompter1_to_play",
+      "audio_format": {
+        "uses": "22khz_1ch"
+      },
+      "buffer_count": 50,
+      "adapter_params": {
+        "device_name": "default",
+        "buffer_count_dev": 8,
+        "start_buffer_count": 6
+      }
+    },
+    {
+      "type": "AudioOutput",
+      "name": "prompter2_to_play",
+      "audio_format": {
+        "uses": "22khz_1ch"
+      },
+      "buffer_count": 50,
+      "adapter_params": {
+        "device_name": "default",
+        "buffer_count_dev": 8,
+        "start_buffer_count": 6
+      }
+    }
+  ],
+  "audio_format": [
+    {
+      "name": "22khz_1ch",
+      "sample_rate": 22050,
+      "samples_per_channel": 512,
+      "channel_count": 1,
+      "encoding": "ENCODING_PCM_16BIT"
+    }
+  ]
+}

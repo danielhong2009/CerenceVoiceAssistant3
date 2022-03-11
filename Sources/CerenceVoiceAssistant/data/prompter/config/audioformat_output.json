@@ -1,0 +1,37 @@
+
+{
+    "audio_formats":[
+        {
+            "scenario": "PROMPTER_1_PLAY",
+            "type": "output_audio_format",
+            "sample_rate": 22050,
+            "samples_per_channel": 512,
+            "channel_count": 1,
+            "bits":16
+        },
+        {
+            "scenario": "PROMPTER_2_PLAY",
+            "type": "output_audio_format",
+            "sample_rate": 22050,
+            "samples_per_channel": 512,
+            "channel_count": 1,
+            "bits":16
+        },
+        {
+            "scenario": "PROMPTER_1_PCM",
+            "type": "output_audio_format",
+            "sample_rate": 22050,
+            "samples_per_channel": 512,
+            "channel_count": 1,
+            "bits":16
+        },
+        {
+            "scenario": "PROMPTER_2_PCM",
+            "type": "output_audio_format",
+            "sample_rate": 22050,
+            "samples_per_channel": 512,
+            "channel_count": 1,
+            "bits":16
+        }
+    ]
+}

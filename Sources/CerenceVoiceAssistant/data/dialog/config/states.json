@@ -1,0 +1,521 @@
+{
+    "cross_domain": {
+        "domain//Comments": {
+            "description": "the domain name(key) should be same as (e)NLU result from SDK",
+            "dialog": "the JS dialog name",
+            "allow": [
+                "a string list of domain name",
+                "to allow DM to jump to"
+            ]
+        },
+        "phone": {
+            "dialog": "phone",
+            "default_state": "PHONE_MAIN",
+            "allow": []
+        },
+        "weather": {
+            "dialog": "weather",
+            "default_state": "WEATHER_MAIN",
+            "allow": []
+        },
+        "sonic": {
+            "dialog": "sonic",
+            "default_state": "SONIC",
+            "allow": []
+        },
+        "freechat": {
+            "dialog": "freechat",
+            "default_state": "FREE_CHAT",
+            "allow": []
+        },
+        "news": {
+            "dialog": "news",
+            "default_state": "NEWS",
+            "allow": []
+        },
+        "navi": {
+            "dialog": "navi",
+            "default_state": "NAVI_MAIN",
+            "allow": []
+        },
+        "music": {
+            "dialog": "music",
+            "default_state": "MUSIC",
+            "allow": []
+        },
+        "audiobook": {
+            "dialog": "audiobook",
+            "default_state": "AUDIOBOOK_MAIN",
+            "allow": []
+        },
+        "cc": {
+            "dialog": "cc",
+            "default_state": "CC",
+            "allow": []
+        },
+        "vehicle": {
+            "dialog": "vehicle",
+            "default_state": "VEHICLE_MAIN",
+            "allow": []
+        },
+        "radio": {
+            "dialog": "radio",
+            "default_state": "RADIO",
+            "allow": []
+        },
+        "hvac": {
+            "dialog": "hvac",
+            "default_state": "HVAC",
+            "allow": []
+        },
+        "dashcam": {
+            "dialog": "dashcam",
+            "default_state": "DASHCAM",
+            "allow": []
+        }
+    },
+    "states": {
+        "state//Comments": {
+            "dialog": "the JS dialog name",
+            "recog_type // one of": [
+                "RECOG_TYPE_NONE",
+                "RECOG_TYPE_WUW",
+                "RECOG_TYPE_ASR",
+                "RECOG_TYPE_SNOOZING",
+                "RECOG_TYPE_REUSE"
+            ],
+            "recog_beep": "[optional] is default to true",
+            "recog_prompt": "[optional] the prompt id which will be played before recognition start"
+        },
+        "DEFAULT": {
+            "dialog": "wuw",
+            "recog_type": "RECOG_TYPE_NONE",
+            "sdk_params": {}
+        },
+        "RETURN_DEFAULT": {
+            "dialog": "wuw",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "IDLE": {
+            "dialog": "wuw",
+            "recog_type": "RECOG_TYPE_NONE",
+            "sdk_params": {}
+        },
+        "PTT_WAKEUP": {
+            "dialog": "wuw",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "AWAKE": {
+            "dialog": "wuw",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "START": {
+            "dialog": "toplevel",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "TOPLEVEL_DISPENSE": {
+            "dialog": "toplevel",
+            "recog_type": "RECOG_TYPE_REUSE"
+        },
+        "TOPLEVEL_SHORT_SNOOZING": {
+            "dialog": "toplevel",
+            "recog_type": "RECOG_TYPE_SNOOZING",
+            "recog_beep": false,
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "GLOBAL_SUB_CONFIRM": {
+            "dialog": "toplevel",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_GENERAL_CONFIRM",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "AC_MAIN": {
+            "dialog": "ac",
+            "recog_type": "RECOG_TYPE_REUSE"
+        },
+        "VEHICLE_MAIN": {
+            "dialog": "vehicle",
+            "recog_type": "RECOG_TYPE_REUSE"
+        },
+        "PHONE_MAIN": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "description": "just a state that switch from other dialog to phone. it'll handle all intentions of phone domain"
+        },
+        "PHONE_SUB_MAIN": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL_DIAL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "PHONE_TOPLEVEL_SHORT_SNOOZING": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_SNOOZING",
+            "recog_beep": false,
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL_DIAL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "PHONE_INCOMING_CALL": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "PHONE_INCOMING_CALL_RECOGNITION": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_INCOMING_CALL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 6000
+            }
+        },
+        "PHONE_CHOOSE_CONTACTS": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_CONTACT_OR_NUMBER",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "PHONE_CHOOSE_NUMBERS": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_CONTACT_OR_NUMBER",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "PHONE_DIALING_CONTACT_SMART_LISTENING": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_SNOOZING",
+            "recog_beep": false,
+            "sdk_params": {
+                "scenario": "SCENARIO_DIALING_CONTACT_SMART_LISTENING",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 4000
+            }
+        },
+        "PHONE_DIAL_NUMBER_CONFIRM": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL_DIAL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "PHONE_SUB_CONTACT_LIST": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_CONTACT_OR_NUMBER",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            },
+            "description": "just a state that switch from MainDialog to phone when wakes up on the contacts page"
+        },
+        "PHONE_SUB_RECENT_CALLS_LIST": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_CONTACT_OR_NUMBER",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            },
+            "description": "just a state that switch from MainDialog to phone when wakes up on the recent call page"
+        },
+        "PHONE_SUB_MISSED_CALLS_LIST": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_CONTACT_OR_NUMBER",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            },
+            "description": "just a state that switch from MainDialog to phone when wakes up on the recent call page"
+        },
+        "PHONE_SUB_OUTGOING_CALLS_LIST": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_CONTACT_OR_NUMBER",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            },
+            "description": "just a state that switch from MainDialog to phone when wakes up on the recent call page"
+        },
+        "PHONE_SUB_INCOMING_CALLS_LIST": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_CONTACT_OR_NUMBER",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            },
+            "description": "just a state that switch from MainDialog to phone when wakes up on the recent call page"
+        },
+        "PHONE_SUB_CONTACT_DETAILS": {
+            "dialog": "phone",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "description": "just a state that switch from MainDialog to phone when wakes up on the contact detail call page"
+        },
+        "NAVI_MAIN": {
+            "dialog": "navi",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "NAVI_SUB_FAVORITE_LIST": {
+            "dialog": "navi",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_POI",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000,
+                "entry_scenario": "NAVI_FAVORITE_LIST"
+            }
+        },
+        "NAVI_SUB_SEARCH_LIST": {
+            "dialog": "navi",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_POI",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000,
+                "entry_scenario": "NAVI_SEARCH_LIST"
+            }
+        },
+        "NAVI_SUB_ADD_VIAPOINT": {
+            "dialog": "navi",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_POI",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000,
+                "entry_scenario": "NAVI_SEARCH_LIST"
+            }
+        },
+        "NAVI_SUB_CHANGE_ROUTE_OPTION": {
+            "dialog": "navi",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_POI",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000,
+                "entry_scenario": "NAVI_SEARCH_LIST"
+            }
+        },
+        "NAVI_POI_SEARCH_LIST": {
+            "dialog": "navi",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_PICKLIST_POI",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000,
+                "entry_scenario": "NAVI_SEARCH_LIST"
+            }
+        },
+        "NAVI_ASK_ADDRESS": {
+            "dialog": "navi",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "NAVI_SUB_MAIN": {
+            "dialog": "navi",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "NAVI_TO_CONFIRM": {
+            "dialog": "navi",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_NAV_CONFIRM",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "WEATHER_MAIN": {
+            "dialog": "weather",
+            "recog_type": "RECOG_TYPE_REUSE"
+        },
+        "AUDIOBOOK_MAIN": {
+            "dialog": "audiobook",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "MUSIC": {
+            "dialog": "music",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "MUSIC_LIST": {
+            "dialog": "music",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "GEN": {
+            "dialog": "gen",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "GEN_SUB_SHOW_FAV": {
+            "dialog": "gen",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "SONIC": {
+            "dialog": "sonic",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "VEHICLE": {
+            "dialog": "vehicle",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "FREE_CHAT": {
+            "dialog": "freechat",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "CC": {
+            "dialog": "cc",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "NEWS": {
+            "dialog": "news",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {
+                "scenario": "UC_TOPLEVEL",
+                "ls_timeout": 5000
+            }
+        },
+        "RADIO": {
+            "dialog": "radio",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {
+                "scenario": "UC_TOPLEVEL",
+                "ls_timeout": 5000
+            }
+        },
+        "HVAC": {
+            "dialog": "hvac",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "HVAC_SUB_MAIN": {
+            "dialog": "hvac",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_GENERAL_CONFIRM",
+                "audio_scenario": "AUDIO_SCENARIO_ASR",
+                "ls_timeout": 5000
+            }
+        },
+        "DASHCAM": {
+            "dialog": "dashcam",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "FITNESS_ENTRY": {
+            "dialog": "fitness",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        },
+        "FITNESS_ASK_REPETITIONS": {
+            "dialog": "fitness",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_FITNESS_REPETITIONS",
+                "audio_scenario": "AUDIO_SCENARIO_ASR"
+            }
+        },
+        "FITNESS_ASK_POUNDS": {
+            "dialog": "fitness",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_FITNESS_POUNDS",
+                "audio_scenario": "AUDIO_SCENARIO_ASR"
+            }
+        },
+        "FITNESS_ASK_COMPLETED": {
+            "dialog": "fitness",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR"
+            }
+        },
+        "END_OF_ROUND_SESSION": {
+            "dialog": "wuw",
+            "recog_type": "RECOG_TYPE_WUW",
+            "recog_beep": "false",
+            "sdk_params": {
+                "scenario": "SCENARIO_WAKEUP",
+                "audio_scenario": "AUDIO_SCENARIO_WAKEUP"
+            }
+        },
+        "END_OF_ROUND_SESSION_WITH_PROMPT": {
+            "dialog": "wuw",
+            "recog_type": "RECOG_TYPE_WUW",
+            "recog_beep": "false",
+            "recog_prompt": "FITNESS_P02",
+            "sdk_params": {
+                "scenario": "SCENARIO_WAKEUP",
+                "audio_scenario": "AUDIO_SCENARIO_WAKEUP"
+            }
+        },
+        "END_OF_ROUND_MAIN": {
+            "dialog": "fitness",
+            "recog_type": "RECOG_TYPE_ASR",
+            "sdk_params": {
+                "scenario": "SCENARIO_TOP_LEVEL",
+                "audio_scenario": "AUDIO_SCENARIO_ASR"
+            }
+        },
+        "END_OF_ROUND_FINISH": {
+            "dialog": "fitness",
+            "recog_type": "RECOG_TYPE_REUSE",
+            "sdk_params": {}
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+  "ai_grounding": {
+    "user_name": "cerence_sdk",
+    "model_name": "general_grounder",
+    "result_grounder": "general_grounder",
+    "DCC_CONTACT": "contacts",
+    "DCC_MUSIC": "media",
+    "DCC_APP": "apps",
+    "DCC_EXAMPLE_0" : "customer_domain",
+    "app_session_id": "aef96eb7-6ea9-4eb2-b1e5-2c070542f4f4",
+    "source":"local",
+    "device_name" : "TEST_DEVICE"
+  },
+  "dcc": [
+    {
+      "name": "DCC_CONTACT",
+      "column":[
+        {
+          "name": "EDBTableUpdateMode"
+        },
+        {
+          "name": "ContactName_ID"
+        },
+        {
+          "name": "ContactName_Ortho",
+          "word_split_method" : "normal"
+        }
+      ]
+    },
+    {
+      "name": "DCC_MUSIC",
+      "column":[
+        {
+          "name": "EDBTableUpdateMode"
+        },
+        {
+          "name": "Title_ID"
+        },
+        {
+          "name": "Title_Ortho",
+          "word_split_method" : "none"
+        },
+        {
+          "name": "Artist_ID"
+        },
+        {
+          "name": "Artist_Ortho",
+          "word_split_method" : "none"
+        },
+        {
+          "name": "Album_ID"
+        },
+        {
+          "name": "Album_Ortho",
+          "word_split_method" : "none"
+        }
+      ]
+    },
+    {
+      "name": "DCC_APP",
+      "column":[
+        {
+          "name": "EDBTableUpdateMode"
+        },
+        {
+          "name": "AppName_ID"
+        },
+        {
+          "name": "AppName_Ortho",
+          "word_split_method" : "none"
+        }
+      ]
+    }
+  ]
+}

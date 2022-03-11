@@ -1,0 +1,23 @@
+{
+  "version": "Prompter 1.0",
+  "prompter": [
+    {
+      "name": "prompter1",
+      "type": "local",
+      "local": {
+        "voice_data_path": {
+          "uses": "tts_data"
+        }
+      }
+    },
+    {
+      "name": "prompter2",
+      "type": "local",
+      "local": {
+        "voice_data_path": {
+          "uses": "tts_data"
+        }
+      }
+    }
+  ]
+}

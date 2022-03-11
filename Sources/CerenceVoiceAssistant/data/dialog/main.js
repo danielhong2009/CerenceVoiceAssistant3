@@ -1,0 +1,1 @@
+var project = require('./bundle.js').default;

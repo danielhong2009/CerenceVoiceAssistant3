@@ -1,0 +1,29 @@
+{
+  "version": "VoConHigh 5.0",
+  "recognizer": [
+    {
+      "name": "recognizer_driver",
+      "asr_engine": {
+        "language": [
+          {
+            "acmod": {
+              "file_name": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "recognizer_codriver",
+      "asr_engine": {
+        "language": [
+          {
+            "acmod": {
+              "file_name": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

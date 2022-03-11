@@ -1,0 +1,6 @@
+{
+  "sse": {
+    "enable": false,
+    "mode": "PASS"
+  }
+}

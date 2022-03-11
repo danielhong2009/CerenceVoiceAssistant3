@@ -1,0 +1,34 @@
+{
+  "enlu_optimize_info": [
+    {
+      "vocon_tag_name": "SLM_others#CONTACT_FULL_NM|GRAMMAR_PHONE#NLUSLOT_CONTACT_NM",
+      "slot_need_add": "ContactName",
+      "slots_need_remove": "YellowPageName|RelationName"
+    },
+    {
+      "vocon_tag_name": "SLM_others#SONG_NM",
+      "slot_need_add": "SongName",
+      "slots_need_remove": ""
+    },
+    {
+      "vocon_tag_name": "SLM_others#ALBUM_NM",
+      "slot_need_add": "AlbumName",
+      "slots_need_remove": ""
+    },
+    {
+      "vocon_tag_name": "SLM_others#ARTIST_NM",
+      "slot_need_add": "ArtistName",
+      "slots_need_remove": ""
+    },
+    {
+      "vocon_tag_name": "SLM_others#APP_NM",
+      "slot_need_add": "AppName",
+      "slots_need_remove": ""
+    },
+    {
+      "vocon_tag_name": "SLM_others#YELLOW_PAGE_NM",
+      "slot_need_add": "YellowPageName",
+      "slots_need_remove": "ContactName|RelationName"
+    }
+  ]
+}

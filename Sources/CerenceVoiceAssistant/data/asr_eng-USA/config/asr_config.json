@@ -1,0 +1,113 @@
+{
+  "asr": {
+    "ctx_properties": [
+      {
+        "name": "WUW",
+        "type": "grammar",
+        "is_wuw": true,
+        "is_vad_only": false,
+        "nlu_type": "none"
+      },
+      {
+        "name": "SLM_OTHERS",
+        "type": "slm",
+        "is_wuw": false,
+        "is_vad_only": false,
+        "nlu_type": "enlu"
+      },
+      {
+        "name": "SLM",
+        "type": "slm",
+        "is_wuw": false,
+        "is_vad_only": false,
+        "nlu_type": "enlu"
+      },
+      {
+        "name": "NVSL",
+        "type": "grammar",
+        "is_wuw": false,
+        "is_vad_only": false,
+        "nlu_type": "none"
+      },
+      {
+        "name": "VAD_DETECTION_ONLY",
+        "type": "grammar",
+        "is_wuw": false,
+        "is_vad_only": true,
+        "nlu_type": "none"
+      },
+      {
+        "name": "CUSTOM_WORDS",
+        "type": "grammar",
+        "is_wuw": false,
+        "is_vad_only": false,
+        "nlu_type": "fake"
+      }
+    ],
+    "ctx_result_config": {
+      "threshold_predefined_wuw": 5000,
+      "threshold_predefined_shortcut": 10000,
+      "threshold_self_defined_wuw": 4400,
+      "threshold_self_defined_shortcut": 10000,
+      "threshold_wuw_with_asr": 4500,
+      "threshold_asr": 4500,
+      "grammar_trust_threshold": 6500,
+      "slm_trust_threshold": 6700,
+      "grammar_join_arbitration_threshold": 4250,
+      "slm_join_arbitration_threshold": 4750,
+      "grammar_arbitration_buff_conf": 1000,
+      "top_conf_delta": 50,
+      "need_orthography_space": true,
+      "anti_fa_rule_list": [
+        "CANCEL_ANTI_FA#ANTI_FA",
+        "EXIT_ANTI_FA#ANTI_FA"
+      ],
+      "tag_list_allow_duplicate_asr": [
+        "SLM_others#CONTACT_FULL_NM",
+        "GRAMMAR_PHONE#CONTACT_FULL_NM"
+      ]
+    },
+    "multi_wuw_result_waiting_time": 150,
+    "asr_speech_time_out": 9000,
+    "asr_utterance_should_use_uid": [
+      {
+        "type": "remove_first_1",
+        "value": [
+          "SLM_others#PHONE_NR"
+        ]
+      },
+      {
+        "type": "change_letter_to_number",
+        "value": [
+          "SLM_others#HOUSE_NR",
+          "SLM_others#RADIO_NR"
+        ]
+      }
+    ],
+    "slots_value_should_use_uid": [
+      {
+        "type": "remove_first_1",
+        "value": [
+          "SLM_others#PHONE_NR"
+        ]
+      },
+      {
+        "type": "constant",
+        "value": [
+          "SLM_others#RADIO_NR",
+          "PICKLIST_GENERAL#NLUSLOT_ENTRY_LIST_NR",
+          "PICKLIST_GENERAL#NLUSLOT_PAGE_NR"
+        ]
+      }
+    ],
+    "asr_optimize_numbers": [
+      "SLM_others#HOUSE_NR",
+      "SLM_others#RADIO_NR"
+    ],
+    "remove_blank_space": false,
+    "is_one_cloud": false
+  },
+  "mapping": {
+    "config_file": "../mapping/mapping.cfg"
+  }
+}

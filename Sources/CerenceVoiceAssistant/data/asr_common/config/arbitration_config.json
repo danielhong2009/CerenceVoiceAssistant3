@@ -1,0 +1,278 @@
+{
+	"arbitration": {
+		"onboard_first_nlu_default_threshold": 0.000000001,
+		"onboard_first_slm_threshold": 6000,
+		"onboard_first_slm_low_threshold": 4000,
+		"onboard_first_grammar_threshold": 5500,
+		"onboard_first_grammar_low_threshold": 4000,
+		"onboard_first_intents": {
+			"settings_and_control:*": {},
+			"sharinginfo:*": {},
+			"help:general:*": {},
+			"camera:*": {},
+			"chatbot:greetings": {},
+			"generic:na:custom": {},
+			"generic:pounds": {},
+			"generic:reps": {},
+			"media:play_rate": {},
+			"media:fast_forward": {},
+			"media:rewind": {},
+			"ude:change_directions": {},
+			"carmanual:book": {},
+			"carmanual:where_my_car": {},
+			"carmanual:query_driver_score": {},
+			"carmanual:appointment": {},
+			"mediamusic:mute": {},
+			"mediamusic:unmute": {},
+			"generic:add_label": {},
+			"generic:delete_label": {},
+			"locations:add_label": {},
+			"locations:delete_label": {},
+			"ude:add_avoidpoint": {},
+			"mediamusic:stop:scanning": {},
+			"mediamusic:scan:radiostation": {},
+			"mediamusic:na:audiobook": {},
+			"mediamusic:get:playlist": {},
+			"media:add_label:channel": {},
+			"mediamusic:add_label:album": {},
+			"mediamusic:add_label:song": {},
+			"mediamusic:add_label:audiobook": {},
+			"mediamusic:add_label:playlist": {},
+			"mediamusic:add_label:radiostation": {},
+			"mediavisual:add_label:channel": {},
+			"mediamusic:add:favorites_list": {},
+			"mediamusic:add:playlist": {},
+			"mediamusic:resume": {},
+			"mediamusic:repeat": {},
+			"mediamusic:shuffle": {},
+			"mediamusic:playall": {},
+			"mediamusic:single": {},
+			"mediamusic:stop": {},
+			"mediamusic:pause": {},
+			"mediamusic:turn_on_repeat:song": {},
+			"mediamusic:show_currently_playing": {},
+			"mediamusic:show_currently_playing:album": {},
+			"mediamusic:show_currently_playing:artist": {},
+			"mediamusic:show_currently_playing:composer": {},
+			"mediamusic:show_currently_playing:genre": {},
+			"mediamusic:show_currently_playing:song": {},
+			"mediamusic:show_currently_playing:source": {},
+			"mediamusic:play:radiostation": {},
+			"mediamusic:stop:radiostation": {},
+			"mediamusic:na:song": {
+				"slot_pattern": [
+					"which=*"
+				]
+			},
+			"mediamusic:na": {
+				"slot_pattern": [
+					"which=*"
+				]
+			},
+			"favorites:add": {},
+			"favorites:play": {},
+			"favorites:delete": {},
+			"favorites:open:list": {},
+			"mediamusic:play": {},
+
+			"media:resume": {},
+			"media:stop": {},
+			"media:na": {},
+			"generic:stop": {},
+			"media:play": {},
+			"mediamusic:play:song": {
+				"check_id_slots": [
+					"song",
+					"album",
+					"artist"
+				]
+			},
+			"mediamusic:play:artist": {
+				"check_id_slots": [
+					"song",
+					"album",
+					"artist"
+				]
+			},
+			"mediamusic:play:album": {
+				"check_id_slots": [
+					"song",
+					"album",
+					"artist"
+				]
+			},
+			"locations:mute_directions": {},
+			"locations:start_directions": {},
+			"locations:unmute_directions": {},
+			"generic:mute": {},
+			"generic:unmute": {},
+			"help:general": {},
+			"calling:call:phone_number": {},
+			"calling:call:contact": {
+				"check_id_slots": [
+					"contact"
+				]
+			},
+			"calling:call": {},
+			"calling:search": {},
+			"calling:redial": {},
+			"calling:callback": {},
+			"calling:call:emergency_call": {},
+			"calling:answer:incoming_call": {},
+			"calling:reject:incoming_call": {},
+			"calling:call:correction": {},
+			"calling:call:phone_number:select": {},
+			"calling:ignore:incoming_call": {},
+			"calling:reset_number": {},
+			"web_app:close:app": {},
+			"web_app:launch:app": {},
+			"generic:correction": {},
+			"generic:cancel": {},
+			"generic:close": {},
+			"generic:pause": {},
+			"generic:resume": {},
+			"generic:repeat": {},
+			"contact:lookup": {
+				"check_id_slots": [
+					"contact"
+				]
+			},
+			"contact:get:address_book": {},
+			"generic:confirm": {},
+			"generic:increase": {},
+			"generic:decrease": {},
+			"generic:decline": {},
+			"generic:na": {
+				"slot_pattern": [
+					"which=*",
+					"list_division=*",
+					"value=*",
+					"contact=*"
+				]
+			},
+			"generic:change_part": {},
+			"ude:get_distance": {},
+			"ude:get_duration": {},
+			"locations:stop_directions": {},
+			"locations:disable:notifications": {},
+			"locations:enable:notifications": {},
+			"locations:increase:zoom": {},
+			"locations:decrease:zoom": {},
+			"locations:where_am_i": {},
+			"ude:get_map": {},
+			"ude:add_waypoint": {},
+			"ude:delete_waypoint": {},
+			"locations:resume_directions": {},
+			"locations:add_favorite": {
+				"slot_pattern": [
+					"relative_location=home|work|destination"
+				]
+			},
+			"locations:delete_favorite": {
+				"slot_pattern": [
+					"relative_location=home|work|destination"
+				]
+			},
+			"locations:set": {
+				"slot_pattern": [
+					"relative_location=home|work|destination"
+				]
+			},
+			"calling:call:business": {
+				"slot_pattern": [
+					"name=icall"
+				]
+			},
+			"ude:change_map": {},
+			"ude:traffic:close": {},
+			"ude:traffic:open": {},
+			"temp:intent_with_all_config": {
+				"specific_nlu_threshold": 0.41,
+				"slot_pattern": [
+					"cond_slot0=*",
+					"cond_slot1=value0|value1",
+					"cond_slot1=value0&&cond_slot2=value1"
+				],
+				"check_id_slots": [
+					"contact"
+				]
+			},
+			"camera:video:*": {}
+		},
+		"onboard_first_intents_exclude": {
+			"weather:*": {},
+			"message:reply": {},
+			"business:search": {},
+			"ude:get_directions": {
+				"slot_pattern": [
+					"name=*"
+				]
+			},
+			"mediamusic:play:audiobook": {
+				"slot_pattern": [
+					"audiobook=*",
+					"cat=*",
+					"anchor=*"
+				]
+			},
+			"mediamusic:play:radiostation": {
+				"slot_pattern": [
+					"radiostation=*"
+				]
+			},
+			"ude:get_map": {
+				"slot_pattern": [
+					"name=*"
+				]
+			},
+			"ude:add_waypoint": {
+				"slot_pattern": [
+					"name=*"
+				]
+			},
+			"ude:get_distance": {
+				"slot_pattern": [
+					"name=*"
+				]
+			},
+			"ude:get_duration": {
+				"slot_pattern": [
+					"name=*"
+				]
+			}
+		},
+		"hybrid_intents": {
+			"calling:call:contact": {
+				"slot_pattern": [
+					"contact=*"
+				]
+			},
+			"mediamusic:play:song": {
+				"slot_pattern": [
+					"song=*",
+					"album=*",
+					"artist=*"
+				]
+			},
+			"mediamusic:play:artist": {
+				"slot_pattern": [
+					"song=*",
+					"album=*",
+					"artist=*"
+				]
+			},
+			"mediamusic:play:album": {
+				"slot_pattern": [
+					"song=*",
+					"album=*",
+					"artist=*"
+				]
+			},
+			"contact:lookup": {
+				"slot_pattern": [
+					"contact=*"
+				]
+			}
+		}
+	}
+}

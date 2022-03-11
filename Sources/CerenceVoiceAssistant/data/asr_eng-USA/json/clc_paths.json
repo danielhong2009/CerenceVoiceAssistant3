@@ -1,0 +1,9 @@
+{
+  "version": "VoConHigh 5.0",
+  "clc_paths": {
+    "clc"         : "../asr/clc",
+    "dictionary"  : "../asr/dct",
+    "lex_cache"   : "%WRITABLE_DIR%/lex_cache",
+    "clc_cache"   : "%WRITABLE_DIR%/clc_cache"
+  }
+}

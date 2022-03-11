@@ -1,0 +1,19 @@
+{
+  "version": "VoConHigh 5.0",
+  "asr_paths": {
+    "acmod": "../asr/acmod",
+    "asr": "../../asr_common/asr_data",
+    "sem3": "../asr/sem3",
+    "liquid": "../liquid",
+    "language_model":"../asr/lm",
+    "search": [
+      "../asr/ctx/grammar",
+      "../asr/ctx/onex",
+      "../asr/sem3"
+    ],
+    "search_cache": "%WRITABLE_DIR%/search_cache",
+    "audio_based_classifier_model": "../asr/sem3",
+    "users": "%WRITABLE_DIR%/users",
+    "asr_quick_correction" : "../asr/aqc"
+  }
+}

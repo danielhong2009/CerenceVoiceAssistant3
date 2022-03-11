@@ -1,0 +1,12 @@
+{
+  "audio_input_config": {
+    "input_channel_count": 1,
+    "sse_zone_count": 4,
+    "wuw_scd": "2mic_1ref_sideinfo_v3.scd",
+    "dialog_scd": "2mic_1ref_sideinfo_v3.scd",
+    "input_module_name": "custom_in",
+    "cutter_module_name": "custom_cutter",
+    "pal_audio_out_module_name": "pal_audio_out",
+    "pal_audio_scenario_name": "PAL_AUDIO"
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "version": "Ai 1.0",
+  "label": "Ai config for result grounding(contact or media or apps)",
+
+  "ai": {
+    "users_storage_path": "%WRITABLE_DIR%/ai/users",
+    "datapacks_storage_path": "../",
+    "generate_interaction_uuids": true,
+    "domain_ontology": "NCSRef-7.1",
+    "data_ingesters": [
+      {
+        "domain_name": "contacts",
+        "domain": "MODEL_SUBJECT_TYPE_CONTACTS",
+        "source_columns": [
+          {
+            "name": "ContactName_ID",
+            "type": "INTEGER"
+          },
+          {
+            "name": "ContactName_Ortho",
+            "type": "STRING"
+          }
+        ]
+      },
+      {
+        "domain_name": "media",
+        "domain": "MODEL_SUBJECT_TYPE_MEDIA",
+        "source_columns": [
+          {
+            "name": "Title_ID",
+            "type": "INTEGER"
+          },
+          {
+            "name": "Title_Ortho",
+            "type": "STRING"
+          },
+          {
+            "name": "Artist_ID",
+            "type": "INTEGER"
+          },
+          {
+            "name": "Artist_Ortho",
+            "type": "STRING"
+          },
+          {
+            "name": "Album_ID",
+            "type": "INTEGER"
+          },
+          {
+            "name": "Album_Ortho",
+            "type": "STRING"
+          }
+        ]
+      },
+      {
+        "domain_name": "apps",
+        "domain": "MODEL_SUBJECT_TYPE_APPS",
+        "source_columns": [
+          {
+            "name": "AppName_ID",
+            "type": "INTEGER"
+          },
+          {
+            "name": "AppName_Ortho",
+            "type": "STRING"
+          }
+        ]
+      }
+    ],
+    "data_mappers": [
+      {
+        "name": "contacts_grounder_data_mapper",
+        "type": "COP_TO_GROUNDING_DOMAIN",
+        "target_attributes": [
+          {
+            "name": "contact",
+            "type": "STRING",
+            "source_column_refs": [
+              "ContactName_Ortho"
+            ]
+          },
+          {
+            "name": "contact_meta",
+            "type": "STRING",
+            "source_column_refs": [
+              "ContactName_ID"
+            ]
+          },
+          {
+            "name": "contact_uid",
+            "type": "INTEGER",
+            "source_column_refs": [
+              "ContactName_ID"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "media_grounder_data_mapper",
+        "type": "COP_TO_GROUNDING_DOMAIN",
+        "target_attributes": [
+          {
+            "name": "artist",
+            "type": "STRING",
+            "source_column_refs": [
+              "Artist_Ortho"
+            ]
+          },
+          {
+            "name": "album",
+            "type": "STRING",
+            "source_column_refs": [
+              "Album_Ortho"
+            ]
+          },
+          {
+            "name": "song",
+            "type": "STRING",
+            "source_column_refs": [
+              "Title_Ortho"
+            ]
+          },
+          {
+            "name": "song_uid",
+            "type": "INTEGER",
+            "source_column_refs": [
+              "Title_ID"
+            ]
+          },
+          {
+            "name": "artist_uid",
+            "type": "INTEGER",
+            "source_column_refs": [
+              "Artist_ID"
+            ]
+          },
+          {
+            "name": "album_uid",
+            "type": "INTEGER",
+            "source_column_refs": [
+              "Album_ID"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "apps_grounder_data_mapper",
+        "type": "COP_TO_GROUNDING_DOMAIN",
+        "target_attributes": [
+          {
+            "name": "app",
+            "type": "STRING",
+            "source_column_refs": [
+              "AppName_Ortho"
+            ]
+          },
+          {
+            "name": "app_uid",
+            "type": "INTEGER",
+            "source_column_refs": [
+              "AppName_ID"
+            ]
+          }
+        ]
+      }
+    ],
+    "grounding_modules": [
+      {
+        "name": "general_grounder",
+        "type": "dyn_token_grounding_module",
+        "dyn_token_grounding_module": {
+          "domain_map": [
+            {
+              "name": "contacts",
+              "data_mapper": "contacts_grounder_data_mapper",
+              "subject_type": "MODEL_SUBJECT_TYPE_CONTACTS"
+            },
+            {
+              "name": "media",
+              "data_mapper": "media_grounder_data_mapper",
+              "subject_type": "MODEL_SUBJECT_TYPE_MEDIA"
+            },
+            {
+              "name": "apps",
+              "data_mapper": "apps_grounder_data_mapper",
+              "subject_type": "MODEL_SUBJECT_TYPE_APPS"
+            }
+          ]
+        },
+        "module_params": {
+          "version": "0.15",
+          "db_grm": "grounding_module.db",
+          "M_n_dev": 10,
+          "M_n_match": 50,
+          "sys_lang": "eng.USA",
+          "use_cache": 1,
+          "domains": [
+            {
+              "name": "contacts",
+              "item_type": [
+                "contact"
+              ],
+              "constraint": 1,
+              "strategy": [
+                {
+                  "name": "nickname",
+                  "stop_match": false,
+                  "db_name": "nickname_eng.USA_v1_0.db"
+                },
+                {
+                  "name": "exact",
+                  "stop_match": false
+                }
+              ]
+            },
+            {
+              "name": "media",
+              "constraint": 1,
+              "strategy": [
+                {
+                  "name": "exact",
+                  "stop_match": false
+                },
+                {
+                  "name": "ssm",
+                  "stop_match": false
+                }
+              ],
+              "item_type": [
+                "song",
+                "artist",
+                "album"
+              ]
+            },
+            {
+              "name": "apps",
+              "item_type": [
+                "app"
+              ],
+              "constraint": 1,
+              "strategy": [
+                {
+                  "name": "exact",
+                  "stop_match": false
+                },
+                {
+                  "name": "ssm",
+                  "stop_match": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "result_grounders": [
+      {
+        "name": "general_grounder",
+        "type": "semantic_result_grounder",
+        "semantic_result_grounder": {
+          "apps": [
+            {
+              "name": "One.NLU",
+              "interpretation_representations": [
+                {
+                  "intents": [
+                    "calling:",
+                    "generic:na",
+                    "contact:na"
+                  ],
+                  "roles": [
+                    "contact"
+                  ],
+                  "grounding_domain": "MODEL_SUBJECT_TYPE_CONTACTS",
+                  "max_grounding_results": 20
+                },
+                {
+                  "intents": [
+                    "mediamusic:play:song",
+                    "mediamusic:play:artist",
+                    "mediamusic:play:album" ],
+                  "roles": [
+                    "song",
+                    "artist",
+                    "album"
+                  ],
+                  "grounding_domain": "MODEL_SUBJECT_TYPE_MEDIA",
+                  "max_grounding_results": 5
+                },
+                {
+                  "intents": [
+                    "settings_and_control:open:app",
+                    "settings_and_control:close:app",
+                    "web_app:launch:app"
+                  ],
+                  "roles": [
+                    "app"
+                  ],
+                  "grounding_domain": "MODEL_SUBJECT_TYPE_APPS",
+                  "max_grounding_results": 5
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

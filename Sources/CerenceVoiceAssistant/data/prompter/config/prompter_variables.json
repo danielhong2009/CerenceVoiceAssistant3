@@ -1,0 +1,14 @@
+{
+  "prompter_init_parameters": [
+    {
+      "prompter_name": "prompter1",
+      "audio_out_module_name": "prompter1_to_pcm",
+      "audio_out_scenario": "PROMPTER_1_PCM"
+    },
+    {
+      "prompter_name": "prompter2",
+      "audio_out_module_name": "prompter2_to_pcm",
+      "audio_out_scenario": "PROMPTER_2_PCM"
+    }
+  ]
+}

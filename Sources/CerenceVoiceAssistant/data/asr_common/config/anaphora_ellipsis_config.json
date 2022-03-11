@@ -1,0 +1,231 @@
+{
+  "anaphora_ellipsis": {
+    "history_max_length": 10,
+    "slot_mapping_ref_type": {
+      "contact": {
+        "type": "TYPE_REF_PERSON",
+        "subTypes": [
+          "CONTACT"
+        ]
+      },
+      "artist": {
+        "type": "TYPE_REF_PERSON",
+        "subTypes": [
+          "MUSIC_ARTIST"
+        ]
+      },
+      "name": {
+        "type": "TYPE_REF_PLACE",
+        "subTypes": [
+          "BUSINESS_NAME"
+        ]
+      },
+      "street": {
+        "type": "TYPE_REF_PLACE",
+        "subTypes": [
+          "STREET"
+        ]
+      },
+      "city": {
+        "type": "TYPE_REF_PLACE",
+        "subTypes": [
+          "CITY"
+        ]
+      },
+      "album": {
+        "type": "TYPE_REF_THING",
+        "subTypes": [
+          "MUSIC_ALBUM"
+        ]
+      },
+      "song": {
+        "type": "TYPE_REF_THING",
+        "subTypes": [
+          "SONG"
+        ]
+      },
+      "time": {
+        "type": "TYPE_REF_MOMENT",
+        "subTypes": [
+          "TIME"
+        ]
+      },
+      "date": {
+        "type": "TYPE_REF_MOMENT",
+        "subTypes": [
+          "DATE"
+        ]
+      }
+    },
+    "cloud_support_ref_type": [
+      "TYPE_REF_PERSON",
+      "TYPE_REF_PLACE",
+      "TYPE_REF_MOMENT",
+      "TYPE_REF_THING",
+      "TYPE_REF_CONTENT",
+      "TYPE_REF_QUANTITY",
+      "TYPE_REF_MUSIC",
+      "TYPE_REF_VIDEO"
+    ],
+    "ellipsis_rules": {
+      "current intent//Comments": {
+        "match previous intent": {
+          "mapped_intent": "mapped intent",
+          "slots_extend": [
+            "A string list of slot names that might need to be retrieved from the previous result"
+          ],
+          "slots_create": [
+            {
+              "name": "slot name",
+              "value": "slot value"
+            }
+          ],
+          "slots_delete": [
+            "A string list of slot names that to be deleted"
+          ]
+        }
+      },
+      "settings_and_control:increase:zoom": {
+        "locations:increase:zoom": {
+          "mapped_intent": "locations:increase:zoom",
+          "slots_extend": []
+        },
+        "locations:decrease:zoom": {
+          "mapped_intent": "locations:increase:zoom",
+          "slots_extend": []
+        }
+      },
+      "generic:increase": {
+        "locations:increase:zoom": {
+          "mapped_intent": "locations:increase:zoom",
+          "slots_extend": []
+        },
+        "locations:decrease:zoom": {
+          "mapped_intent": "locations:increase:zoom",
+          "slots_extend": []
+        },
+        "settings_and_control:open:windows": {
+          "mapped_intent": "settings_and_control:open:windows",
+          "slots_extend": [
+            "car_part",
+            "area"
+          ],
+          "slots_create": [
+            {
+              "name": "value",
+              "value": "large_change"
+            }
+          ]
+        }
+      },
+      "settings_and_control:decrease:zoom": {
+        "locations:increase:zoom": {
+          "mapped_intent": "locations:decrease:zoom",
+          "slots_extend": []
+        },
+        "locations:decrease:zoom": {
+          "mapped_intent": "locations:decrease:zoom",
+          "slots_extend": []
+        }
+      },
+      "generic:decrease": {
+        "locations:increase:zoom": {
+          "mapped_intent": "locations:decrease:zoom",
+          "slots_extend": []
+        },
+        "locations:decrease:zoom": {
+          "mapped_intent": "locations:decrease:zoom",
+          "slots_extend": []
+        }
+      },
+      "generic:close": {
+        "settings_and_control:open:windows": {
+          "mapped_intent": "settings_and_control:close:windows",
+          "slots_extend": [
+            "area"
+          ]
+        }
+      }
+    },
+    "anaphora_rules": {
+      "current anaphora slot name//Comments": {
+        "slot_name": "The slots that can be replaced in the last asr result are preferentially searched based on the slot name",
+        "type": "Set the type to be searched"
+      },
+      "contact_anaphora": {
+        "slot_name": "contact",
+        "type": "TYPE_REF_PERSON"
+      },
+      "artist_anaphora": {
+        "slot_name": "artist",
+        "type": "TYPE_REF_PERSON"
+      },
+      "recipient_anaphora": {
+        "slot_name": "",
+        "type": "TYPE_REF_PERSON"
+      },
+      "anaphora": {
+        "slot_name": "",
+        "type": "TYPE_REF_THING"
+      }
+    },
+    "context_example": {
+      "person_example": {
+        "referType": {
+          "type": "TYPE_REF_PERSON"
+        },
+        "data": {
+          "person": {
+            "id": 1001,
+            "contact": "张三",
+            "artist": "周杰伦",
+            "phoneNumber": "123",
+            "gender": 1
+          }
+        }
+      },
+      "place_example": {
+        "referType": {
+          "type": "TYPE_REF_PLACE"
+        },
+        "data": {
+          "place": {
+            "name": "Marriott-Washington",
+            "phoneNumber": "12313",
+            "geoPosition": {
+              "latitude": 38.89635,
+              "longitude": -77.03081
+            },
+            "address": {
+              "roomNumber": "1331",
+              "houseNumber": "1331",
+              "street": "Pennsylvania Ave NW",
+              "city": "Washington",
+              "district": "Downtown",
+              "postalCode": "20004",
+              "crossStreet": "123",
+              "state": "DC",
+              "country": "USA"
+            }
+          }
+        }
+      },
+      "date_example": {
+        "referType": {
+          "type": "TYPE_REF_MOMENT"
+        },
+        "data": {
+          "dateTime": {
+            "seconds": 10,
+            "min": 30,
+            "hour": 9,
+            "mday": 22,
+            "month": 4,
+            "weekday": "MONDAY",
+            "year": 2021
+          }
+        }
+      }
+    }
+  }
+}

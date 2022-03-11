@@ -1,0 +1,43 @@
+{
+  "cloud": {
+    "service_name": "CLOUD_CREDENTIAL",
+    "enable_cloud_nlu": true,
+    "command_timeout": 5000,
+    "command_name": "DRAGON_NLU_ASR_CMD",
+    "command_dict": {
+      "dictation_type": "ccpoi_nav",
+      "dictation_language": "eng-USA",
+      "organization_id": "Nuance",
+      "client_os_type": "Linux",
+      "client_os_version": "Ubuntu 18.04",
+      "locale": "USA",
+      "ui_language": "eng-USA",
+      "network_type": "wifi",
+      "audio_source": "SpeakerAndMicrophone",
+      "application": "NAUTILUS_FITNESS",
+      "location": "<37.749131,-122.433969> +/- 150.0m",
+      "city": "'San Francisco'"
+    },
+    "request_info": {
+      "poiTestRequest": "true",
+      "text": "",
+      "start": 0,
+      "end": 0,
+      "binary_results": 0,
+      "enable_intermediate_response": 1,
+      "intermediate_response_mode": "NoUtteranceDetectionWithPartialRecognition",
+      "nbest_text_results": 1,
+      "appserver_data": {
+        "appDataDict": "",
+        "time": "",
+        "timezone": "Asia/Chongqing",
+        "user_context": "Departure",
+        "return_nlu_results": "1",
+        "speaker": "Unknown",
+        "type": "conversation",
+        "action_mode": "verbose",
+        "session_state": ""
+      }
+    }
+  }
+}

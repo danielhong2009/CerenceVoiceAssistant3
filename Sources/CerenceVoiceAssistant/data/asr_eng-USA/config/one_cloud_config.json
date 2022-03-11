@@ -1,0 +1,12 @@
+{
+  "one_cloud": {
+    "service_name": "CLOUD_CREDENTIAL",
+    "enable_cloud_nlu": true,
+    "command_timeout": 20000,
+    "command_name": "nlu/v1",
+    "command_dict": {
+      "context": {
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "version": "VoConHigh 5.0",
+  "application": {
+    "name": "APP_CUSTOM_WORDS",
+    "input": [
+      {
+        "type": "asr",
+        "asr": {
+          "dccs_to_wait_for": [
+            {
+              "name": "DCC_CUSTOM_WORDS_ENTRY_NM"
+            }
+          ],
+          "search": [
+            {
+              "name": "SEARCH_CUSTOM_WORDS",
+              "type": "static",
+              "static": {
+                "file_name": "custom_words.fcf",
+                "do_crc_check": "false"
+              },
+              "vocon_parameters": {
+                "LH_SEARCH_PARAM_TSILENCE": 150,
+                "LH_SEARCH_PARAM_MAXNBEST": 1,
+                "LH_SEARCH_PARAM_ACCURACY": 5000,
+                "0x00d7a258": 1
+              },
+              "connection": [
+                {
+                  "expansion_point": "slot:CUSTOM_WORDS#ENTRY_NM",
+                  "search": {
+                    "type": "dynamic",
+                    "dynamic": {
+                      "dynamic_content_consumer": "DCC_CUSTOM_WORDS_ENTRY_NM",
+                      "search_name": "asr_custom_words_ctx"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

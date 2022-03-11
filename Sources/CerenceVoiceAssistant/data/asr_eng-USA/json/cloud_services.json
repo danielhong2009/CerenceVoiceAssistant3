@@ -1,0 +1,81 @@
+{
+  "version": "CloudServices 1.0",
+  "cloud_services": [
+    {
+      "type": "http",
+      "name": "DRAGON_CREDENTIALS_HTTP",
+      "url": "https://i2a.mtdmz.cerenceapi.com:443/NmspServlet/",
+      "ssl_certificate_bundle": "../cert/ca-bundle.crt",
+      "app_id": "CRNC_NAUTILUS_FITNESS_CLOUD",
+      "app_key": "c9858854369122132ad86bc8b8129190d23b3064143084ea393cebd77bea4dc930bee52e634f4f87c812e9d1f513d5db4894f932533cc69d4a2a1890bbd5e11f",
+      "app_name": "NAUTILUS_FITNESS",
+      "app_version": "1",
+      "app_language": "eng-USA",
+      "connection_timeout": 5,
+      "idle_session_timeout": 10,
+      "carrier": "carrier",
+      "device_model": "DT_INTERNAL_DEVICE_MODEL",
+      "uid": {
+        "vh_callback": {
+          "name": "vh_cloud_uid",
+          "type": "string",
+          "default": "DT_INTERNAL_UID"
+        }
+      },
+      "input_audio_format": {
+        "name": "AudioFormat",
+        "container": "CONTAINER_OGG",
+        "encoding": "ENCODING_OPUS",
+        "sample_rate": 16000,
+        "samples_per_channel": 960,
+        "channel_count": 1
+      }
+    },
+    {
+      "type": "http_onecloud",
+      "name": "ONE_CLOUD_HTTP",
+      "url": "https://cerence-ref-validation-eng-usa.cn.onecloud.cerenceapi.cn:443/",
+      "ssl_certificate_bundle": "../cert/ca-bundle.crt",
+      "connection_timeout": 5,
+      "idle_session_timeout": 10,
+      "uid": {
+        "vh_callback": {
+          "name": "vh_cloud_uid",
+          "type": "string",
+          "default": "DT_INTERNAL_UID"
+        }
+      },
+      "extra_post_headers": {
+        "vh_callback": {
+          "name": "extra_post_headers",
+          "type": "array",
+          "default": []
+        }
+      },
+      "authorization": {
+        "name": "demoOAuth",
+        "type": "OAuth",
+        "adapter_type": "CLOUD_OAUTH",
+        "client_id": "cerence-ref-p0001",
+        "client_secret": "6cfa503fb17e6c21247a62cf5350c7fe5d32b982a51649d3b499870ec9b2ce7d",
+        "url": "https://oauth-cerence-ref-production.cn.onecloud.cerenceapi.cn",
+        "scope": "access:speech",
+        "adapter_params": {}
+      },
+      "input_audio_format": {
+        "name": "AudioFormat",
+        "container": "CONTAINER_OGG",
+        "encoding": "ENCODING_OPUS",
+        "sample_rate": 16000,
+        "samples_per_channel": 960,
+        "channel_count": 1
+      },
+      "output_audio_format": {
+        "encoding": "ENCODING_OPUS",
+        "sample_rate": 16000,
+        "samples_per_channel": 1920,
+        "channel_count": 1
+      }
+    }
+  ]
+}

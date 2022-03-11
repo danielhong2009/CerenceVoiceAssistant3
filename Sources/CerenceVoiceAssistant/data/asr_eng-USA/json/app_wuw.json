@@ -1,0 +1,58 @@
+{
+  "version": "VoConHigh 5.0",
+  "application": {
+    "name": "APP_WUW",
+    "input": [
+      {
+        "type": "asr",
+        "asr": {
+          "dccs_to_wait_for": [
+            {
+              "name": "DCC_CUSTOM_MAIN_WUW"
+            },
+            {
+              "name": "DCC_CUSTOM_SHORTCUT_WUW"
+            }
+          ],
+          "search": [
+            {
+              "name": "SEARCH_WUW",
+              "type": "static",
+              "static": {
+                "file_name": "wuw.fcf"
+              },
+              "connection": [
+                {
+                  "expansion_point": "slot:WUW#self_defined_wuw",
+                  "search": {
+                    "type": "dynamic",
+                    "dynamic": {
+                      "dynamic_content_consumer": "DCC_CUSTOM_MAIN_WUW",
+                      "search_name": "custom_main_wuw_ctx"
+                    }
+                  }
+                },
+                {
+                  "expansion_point": "slot:WUW#self_defined_shortcut",
+                  "search": {
+                    "type": "dynamic",
+                    "dynamic": {
+                      "dynamic_content_consumer": "DCC_CUSTOM_SHORTCUT_WUW",
+                      "search_name": "custom_shortcut_wuw_ctx"
+                    }
+                  }
+                }
+              ],
+              "vocon_parameters": {
+                "LH_SEARCH_PARAM_TSILENCE": 100,
+                "LH_SEARCH_PARAM_MAXNBEST": 1,
+                "LH_SEARCH_PARAM_ACCURACY": 5000,
+                "LH_SEARCH_PARAM_TANYSPEECH": "LH_TRUE"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

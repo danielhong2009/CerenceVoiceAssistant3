@@ -1,0 +1,178 @@
+{
+  "version": "AudioMgr 1.0",
+  "audio_scenario": [
+    {
+      "name": "PAL_AUDIO",
+      "audiopaths": [
+        [
+          "pal_audio_in",
+          "pal_audio_out"
+        ]
+      ]
+    },
+    {
+      "name": "AUDIO_SCENARIO_WAKEUP",
+      "audiopaths": [
+        [
+          "custom_in",
+          "asd_1_2"
+        ],
+        [
+          "asd_1_2:picked_ch1",
+          "energy_level"
+        ],
+        [
+          "energy_level",
+          "recognizer_driver"
+        ],
+        [
+          "asd_1_2:picked_ch2",
+          "custom_cutter"
+        ]
+      ]
+    },
+    {
+      "name": "AUDIO_SCENARIO_ASR",
+      "audiopaths": [
+        [
+          "custom_in",
+          "asd_1_2"
+        ],
+        [
+          "asd_1_2:picked_ch1",
+          "energy_level"
+        ],
+        [
+          "energy_level",
+          "recognizer_driver"
+        ],
+        [
+          "asd_1_2:picked_ch2",
+          "custom_cutter"
+        ]
+      ]
+    }
+  ],
+  "module_config": [
+    {
+      "type": "AudioInput",
+      "adapter_type": "PAL_AUDIO",
+      "interleaved_format": false,
+      "name": "pal_audio_in",
+      "adapter_params": {
+        "device_name": "default"
+      },
+      "audio_format": {
+        "uses": "16khz_1ch_320"
+      }
+    },
+    {
+      "type": "AudioOutput",
+      "name": "pal_audio_out",
+      "audio_format": {
+        "uses": "16khz_1ch_320"
+      }
+    },
+    {
+      "type": "AudioInput",
+      "name": "custom_in",
+      "interleaved_format": true,
+      "adapter_params": {
+        "device_name": "test"
+      },
+      "audio_format": {
+        "uses": "16khz_1ch_320"
+      }
+    },
+    {
+      "type": "SpeechSignalEnhancement",
+      "name": "sse",
+      "sse_config_file": {
+        "vh_callback": {
+          "name": "sse_config_file",
+          "type": "string",
+          "default": "2mic_1ref_sideinfo_v3.scd"
+        }
+      },
+      "active_acoustic_zones": {
+        "vh_callback": {
+          "name": "sse_active_acoustic_zones",
+          "type": "array",
+          "default": []
+        }
+      }
+    },
+    {
+      "type": "AudioStreamDistributor",
+      "name": "asd_1_2",
+      "input_channel_count": 1,
+      "master_output": "picked_ch1",
+      "output_config": [
+        {
+          "name": "picked_ch1",
+          "input_channel_assignment": [
+            "1"
+          ]
+        },
+        {
+          "name": "picked_ch2",
+          "input_channel_assignment": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "AudioOutput",
+      "name": "custom_cutter",
+      "audio_format": {
+        "uses": "16khz_1ch_320"
+      }
+    },
+    {
+      "type": "AudioSignalAnalysis",
+      "name": "energy_level",
+      "rms_interval": 200
+    },
+    {
+      "type": "AudioStreamDistributor",
+      "name": "dist",
+      "input_channel_count": 1,
+      "master_output": "picked_ch1",
+      "output_config": [
+        {
+          "name": "picked_ch1",
+          "input_channel_assignment": [
+            "1"
+          ]
+        },
+        {
+          "name": "picked_ch2",
+          "input_channel_assignment": [
+            "1"
+          ]
+        }
+      ]
+    }
+  ],
+  "audio_format": [
+    {
+      "name": "16khz_1ch_320",
+      "sample_rate": 16000,
+      "samples_per_channel": 320,
+      "channel_count": 1
+    },
+    {
+      "name": "16khz_3ch_320",
+      "sample_rate": 16000,
+      "samples_per_channel": 320,
+      "channel_count": 3
+    },
+    {
+      "name": "16khz_8ch_320",
+      "sample_rate": 16000,
+      "samples_per_channel": 320,
+      "channel_count": 8
+    }
+  ]
+}

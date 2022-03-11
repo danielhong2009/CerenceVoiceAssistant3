@@ -1,0 +1,33 @@
+{
+	"appKey": "c9858854369122132ad86bc8b8129190d23b3064143084ea393cebd77bea4dc930bee52e634f4f87c812e9d1f513d5db4894f932533cc69d4a2a1890bbd5e11f",
+	"uId": "vh_cloud_uid",
+	"language": "eng-USA",
+	"appName": "NAUTILUS_FITNESS",
+	"inCodec": "PCM_16_16K",
+	"outCodec": "PCM_16_16K",
+	"appVersion": "1",
+	"cmdName": "DRAGON_NLU_APPSERVER_CMD",
+	"cmdDict": {
+		"audio_source": "SpeakerAndMicrophone",
+		"locale": "USA",
+		"phone_OS": "4.0",
+		"ui_langugage": "en",
+		"location": "<42.32119,-83.216575> +/- 150.0m",
+		"organization_id": "NUANCE",
+		"application_name": "NAUTILUS_FITNESS",
+		"application": "NAUTILUS_FITNESS",
+		"phone_submodel": "nmPhone2,1",
+		"dictation_language": "eng-USA",
+		"application_state_id": "45",
+		"utterance_number": "5",
+		"dictation_type": "ccpoi_nav",
+		"phone_network": "wifi",
+		"application_session_id": "1234567890",
+		"tts_voice": "",
+		"context_tag": "",
+		"network_type": "wifi"
+	},
+	"carrier": "ncstestclient_cicd",
+	"appId": "CRNC_NAUTILUS_FITNESS_CLOUD",
+	"deviceModel": "deviceModel"
+}

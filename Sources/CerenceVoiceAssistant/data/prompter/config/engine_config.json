@@ -1,0 +1,4 @@
+{
+    "engine_name": "default",
+    "comments": "This config which prompter engine will be used inside SDK. Use 'default' for cerence VE. Besides default, there must be a folder named as engine name under prompter folder, eg. 'emo'"
+}

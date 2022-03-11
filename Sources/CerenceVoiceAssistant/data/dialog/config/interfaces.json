@@ -1,0 +1,3873 @@
+{
+    "Last_Commit_Id": "1190caf038195d6736a4640cfbf9406d73f0c93f",
+    "Types": {
+        "comments_begin": "#########################################################################################################",
+        "comments": [
+            "these types are used in system calls or events, basically they are just strings."
+        ],
+        "comments_end": "#########################################################################################################",
+        "ResultCode_enum": [
+            "OK",
+            "ERROR",
+            "UNSUPPORTED",
+            "ALREADY_EXPECTED",
+            "ALREADY_MAX",
+            "ALREADY_MIN",
+            "OUT_OF_RANGE",
+            "TIMEOUT"
+        ],
+        "NaviRouteOption_enum": [
+            "FASTEST",
+            "SHORTEST",
+            "MOST_ECONOMIC",
+            "AVOID_CONGESTION"
+        ],
+        "EnergyType_enum": [
+            "FUEL",
+            "ELECTRIC"
+        ],
+        "LocationReference_enum": [
+            "CURRENT_ADDRESS",
+            "DESTINATION",
+            "ROUTE",
+            "POI"
+        ],
+        "MapDisplayMode_enum": [
+            "MODE_2D",
+            "MODE_3D",
+            "HEAD_UP_MODE",
+            "NORTH_UP_MODE"
+        ],
+        "ZoomMapType_enum": [
+            "ZOOM_IN",
+            "ZOOM_OUT",
+            "ZOOM_IN_TO_MAX",
+            "ZOOM_OUT_TO_MIN"
+        ],
+        "AddressType_enum": [
+            "CURRENT_ADDRESS",
+            "DESTINATION_ADDRESS",
+            "HOME_ADDRESS",
+            "OFFICE_ADDRESS"
+        ],
+        "PlaceType_enum": [
+            "POI",
+            "ADDRESS"
+        ],
+        "PlayMode_enum": [
+            "SHUFFLE",
+            "REPEAT_ONE",
+            "REPEAT_ALL",
+            "ALL_ONCE"
+        ],
+        "MediaPlayControlType_enum": [
+            "PREV",
+            "NEXT",
+            "PAUSE",
+            "STOP",
+            "RESUME",
+            "REPLAY",
+            "FAST_FORWARD",
+            "BACK_FORWARD",
+            "PLAY_RATE"
+        ],
+        "PlayListType_enum": [
+            "FAVORITE",
+            "CURRENT"
+        ],
+        "FavoriteControlType_enum": [
+            "ADD",
+            "REMOVE"
+        ],
+        "PhoneCallAction_enum": [
+            "IGNORE_INCOMING_CALL",
+            "ANSWER_CALL",
+            "HANGUP_OUTGOING_CALL",
+            "REJECT_INCOMING_CALL",
+            "REPLY_CALL_BY_TEXT"
+        ],
+        "CallLogType_enum": [
+            "MISSED_CALL_LOG",
+            "OUTGOING_CALL_LOG",
+            "ANSWERED_CALL_LOG",
+            "INCOMING_CALL_LOG",
+            "ALL_CALL_LOG"
+        ],
+        "PhoneNumberType_enum": [
+            "HOME",
+            "MOBILE",
+            "WORK",
+            "OTHER"
+        ],
+        "WindDirection_enum": [
+            "FACE",
+            "BODY",
+            "FEET",
+            "FRONT"
+        ],
+        "VehicleArea_enum": [
+            "SEAT_UNKNOWN",
+            "SEAT_ROW_FRONT",
+            "SEAT_ROW_REAR",
+            "SEAT_ROW_1_CENTER",
+            "SEAT_ROW_1_LEFT",
+            "SEAT_ROW_1_RIGHT",
+            "SEAT_ROW_2_CENTER",
+            "SEAT_ROW_2_LEFT",
+            "SEAT_ROW_2_RIGHT",
+            "SEAT_ROW_3_CENTER",
+            "SEAT_ROW_3_LEFT",
+            "SEAT_ROW_3_RIGHT",
+            "SEAT_ALL_RIGHT",
+            "SEAT_ALL_LEFT",
+            "SEAT_ALL"
+        ],
+        "WindshieldType_enum": [
+            "FRONT",
+            "REAR",
+            "BOTH"
+        ],
+        "PeriodType_enum": [
+            "CURRENT_TRIP",
+            "THIS_WEEK",
+            "THIS_MONTH",
+            "THIS_YEAR",
+            "ALL"
+        ],
+        "HVACControlAction_enum": [
+            "EXACT_VALUE",
+            "INCREASE",
+            "DECREASE",
+            "MAX",
+            "MIN"
+        ],
+        "RadioMode_enum": [
+            "UNSPECIFIED",
+            "AM",
+            "FM"
+        ],
+        "StartStop_enum": [
+            "START",
+            "STOP"
+        ],
+        "MediaSource_enum": [
+            "BLUETOOTH",
+            "USB",
+            "SLACKER",
+            "SPOTIFY",
+            "AUX",
+            "LOCAL",
+            "ONLINE",
+            "NONE"
+        ],
+        "SpeedUnits_enum": [
+            "MPH",
+            "KMH"
+        ],
+        "TemperatureUnit_enum": [
+            "F",
+            "C"
+        ],
+        "MileageUnit_enum": [
+            "KM",
+            "MI"
+        ],
+        "VehicleStatus_enum": [
+            "GOOD",
+            "WARNING",
+            "FAILURE"
+        ],
+        "CarInfoType_enum": [
+            "FUEL_CONSUMPTION",
+            "FUEL_CONSUMPTION_FOR_THIS_TOUR",
+            "MILEAGE_LEFT",
+            "MILEAGE_PERIOD",
+            "TOTAL_MILEAGE",
+            "MAINTENANCE",
+            "MAX_SPEED"
+        ],
+        "MediaType_enum": [
+            "MUSIC",
+            "RADIO",
+            "NEWS",
+            "AUDIOBOOK",
+            "NONE"
+        ],
+        "MediaState_enum": [
+            "PLAYING",
+            "PAUSED",
+            "STOPPED",
+            "UNKNOWN"
+        ],
+        "PermissionName_enum": [
+            "READ_CONTACTS",
+            "READ_CALL_LOGS"
+        ],
+        "DisplayScenario_enum": [
+            "FREECHAT_CONVERSATION",
+            "NAVI_TRIP_INFO",
+            "NAVI_POI_INFO",
+            "PHONE_DIALING_NUMBER",
+            "PHONE_SMART_LISTENING",
+            "SYSTEM_HELP",
+            "SYSTEM_HOME_PAGE",
+            "HINTS_UPDATE",
+            "HINTS_AND_LEADING_QUESTIONS_UPDATE",
+            "SYSTEM_WAKEUP_WORD",
+            "SYSTEM_WUW_INPUT_BOX",
+            "VEHICLE_CONTROL_CAR_INFO",
+            "WEATHER_INFORMATION",
+            "WEATHER_AQI",
+            "FITNESS_USER_RESPONSE",
+            "FITNESS_WORKOUT_REPORT",
+            "MUSIC_FAVORITE_LIST",
+            "AUDIOBOOK_FAVORITE_LIST",
+            "RADIO_FAVORITE_LIST"
+        ],
+        "PickListScenario_enum": [
+            "SYSTEM_ASK_FOR_WUW",
+            "SYSTEM_CONFIRM_WUW",
+            "SYSTEM_WUW_CONFIRMED",
+            "SYSTEM_CHANGE_LANGUAGE",
+            "SYSTEM_CHANGE_VOICE_NAME",
+            "NAVI_POI_LIST",
+            "NAVI_ROUTE_OPTION_LIST",
+            "NAVI_RECENT_LIST",
+            "NEWS_LIST",
+            "PHONE_CONTACT_LIST",
+            "PHONE_CALL_LOG",
+            "PHONE_CONTACT_DISAMBIG_LIST",
+            "PHONE_NUMBER_DISAMBIG_LIST"
+        ],
+        "DrivingMode_enum": [
+            "SPORT",
+            "ECO",
+            "ENDURO",
+            "RAIN",
+            "PRO"
+        ],
+        "PageControlType_enum": [
+            "FIRST_PAGE",
+            "PREV_PAGE",
+            "NEXT_PAGE",
+            "LAST_PAGE",
+            "SET_PAGE"
+        ],
+        "WeatherFocusType_enum": [
+            "CURRENT_CONDITIONS",
+            "DAILY_FORECASTS",
+            "HOURLY_FORECASTS",
+            "OUT_OF_RANGE"
+        ],
+        "StreamType_enum": [
+            "DEFAULT",
+            "SYSTEM",
+            "MUSIC",
+            "NAVIGATION",
+            "VOICE_CALL"
+        ],
+        "HvacFunction_enum": [
+            "AC_ON_OFF",
+            "AC_TEMP",
+            "FAN_SPEED_LEVEL",
+            "FAN_MODE",
+            "RECIRC_ON_OFF",
+            "SEAT_HEAT_ON_OFF",
+            "SEAT_HEAT_LEVEL",
+            "SEAT_VENTILATION_ON_OFF",
+            "SEAT_VENTILATION_LEVEL",
+            "STEERING_WHEEL_HEAT_ON_OFF",
+            "STEERING_WHEEL_HEAT_LEVEL",
+            "HAND_GRIP_HEAT_ON_OFF",
+            "HAND_GRIP_HEAT_LEVEL",
+            "AIR_PURIFIER_ON_OFF",
+            "AIR_PURIFIER_LEVEL"
+        ],
+        "FunctionAvailability_enum": [
+            "UNAVAILABLE",
+            "AVAILABLE",
+            "AVAILABLE_BY_MANUAL_ONLY"
+        ],
+        "CalculationMethod_enum": [
+            "CURRENT_TRIP",
+            "TOTAL_AVERAGE"
+        ],
+        "VehicleConnectionStatus_enum": [
+            "CONNECTED",
+            "DISCONNECTED"
+        ],
+        "VehicleFunction_enum": [
+            "SUNROOF",
+            "GASCAP",
+            "TRUNK",
+            "HEAD_LIGHT",
+            "WINDOW",
+            "SUNSHADE",
+            "AMBIENT_LIGHT",
+            "PANORAMIC_CAMERA",
+            "HUD",
+            "CLUSTER"
+        ],
+        "Color_enum": [
+            "RED",
+            "ORANGE",
+            "YELLOW",
+            "GREEN",
+            "CYAN",
+            "BLUE",
+            "PURPLE"
+        ],
+        "PanoramicViewMode_enum": [
+            "ALL",
+            "LEFT",
+            "RIGHT",
+            "FRONT",
+            "REAR",
+            "OFF"
+        ],
+        "HUDMode_enum": [
+            "SPORT",
+            "CLASSICAL"
+        ],
+        "Speakers_enum": [
+            "ALL_SPEAKERS",
+            "DRIVER_SPEAKER"
+        ],
+        "TireUnit_enum": [
+            "BAR",
+            "PSI",
+            "KPA"
+        ],
+        "VehicleCheckType_enum": [
+            "ALL",
+            "ENERGY",
+            "ENGINE_TEMPERATURE",
+            "TIRE_PRESSURE",
+            "AUXILLARY_BATTERY"
+        ],
+        "EnergyConsumptionUnit_enum": [
+            "MPG",
+            "L_100KM",
+            "KWH"
+        ],
+        "CCFunction_enum": [
+            "WIFI",
+            "BT",
+            "SCREEN"
+        ],
+        "YNU_enum": [
+            "YES",
+            "NO",
+            "UNKNOWN"
+        ],
+        "OpenClose_enum": [
+            "OPEN",
+            "CLOSE"
+        ],
+        "Switch_enum": [
+            "ON",
+            "OFF"
+        ],
+        "VehicleType_enum": [
+            "TWO_WHEELER",
+            "AUTO"
+        ],
+        "ClusterMode_enum": [
+            "FOCUS",
+            "SEPARATION"
+        ],
+        "WheelPosition_enum": [
+            "FRONT",
+            "REAR",
+            "FRONT_LEFT",
+            "FRONT_RIGHT",
+            "REAR_LEFT",
+            "REAR_RIGHT"
+        ],
+        "LockAction_enum": [
+            "LOCK",
+            "UNLOCK"
+        ],
+        "MaintenanceState_enum": [
+            "SUFFICIENT",
+            "TIME_NEAR",
+            "MILEAGE_NEAR",
+            "ALREADY_EXCEED"
+        ],
+        "ServiceType_enum": [
+            "CALL_CENTER",
+            "CAR_DEALER"
+        ],
+        "FitnessType_enum": [
+            "REPETITIONS",
+            "POUNDS"
+        ],
+        "EmergencyType_enum": [
+            "NONE",
+            "POLICE",
+            "AMBULANCE",
+            "FIRE"
+        ],
+        "IntentionType_enum": [
+            "CALLING",
+            "CALLBACK",
+            "REDIAL",
+            "SHOW_CALL_LOG",
+            "SHOW_PHONE_BOOK"
+        ],
+        "RecordingType_enum": [
+            "VIDEO",
+            "EMERGENCY_VIDEO",
+            "PHOTO"
+        ],
+        "ManageRecordingsAction_enum": [
+            "PLAY",
+            "DELETE",
+            "DOWNLOAD",
+            "KEEP"
+        ]
+    },
+    "HMI_Params": {
+        "Display": {
+            "FREECHAT_CONVERSATION": {
+                "params": {
+                    "user_words": "string",
+                    "cp_response": "string"
+                },
+                "result_data": {}
+            },
+            "RADIO_FAVORITE_LIST": {
+                "params": {},
+                "result_data": {}
+            },
+            "NAVI_TRIP_INFO": {
+                "params": {
+                    "distance": "double",
+                    "unit_of_distance": "MileageUnit_enum",
+                    "hours": "int",
+                    "minutes": "int"
+                },
+                "result_data": {}
+            },
+            "NAVI_POI_INFO": {
+                "params": {
+                    "place_info": {
+                        "type": "PlaceType_enum",
+                        "name": "string",
+                        "address": "string",
+                        "longitude": "double",
+                        "latitude": "double",
+                        "distance": "double",
+                        "unit_of_distance": "MileageUnit_enum",
+                        "country": "string",
+                        "state": "string",
+                        "city": "string"
+                    }
+                },
+                "result_data": {}
+            },
+            "PHONE_DIALING_NUMBER": {
+                "params": {
+                    "phone_number": "string",
+                    "highlight_start_index": "int",
+                    "highlight_end_index": "int"
+                },
+                "result_data": {}
+            },
+            "PHONE_SMART_LISTENING": {
+                "params": {
+                    "contact": {
+                        "contact_id": "int",
+                        "contact_name": "string"
+                    },
+                    "phone_number": {
+                        "number": "string",
+                        "number_type": "PhoneNumberType_enum"
+                    }
+                },
+                "result_data": {}
+            },
+            "FITNESS_USER_RESPONSE": {
+                "params": {
+                    "value": "string",
+                    "type": "FitnessType_enum"
+                },
+                "result_data": {}
+            },
+            "FITNESS_WORKOUT_REPORT": {
+                "params": {
+                    "hr_max": "number",
+                    "average_pace_minutes": "number",
+                    "exercise_time_minutes": "number",
+                    "running_distance_meters": "number",
+                    "training_name": "string"
+                },
+                "result_data": {}
+            },
+            "SYSTEM_HELP": {
+                "params": {},
+                "result_data": {}
+            },
+            "SYSTEM_HOME_PAGE": {
+                "params": {},
+                "result_data": {}
+            },
+            "HINTS_UPDATE": {
+                "params": {
+                    "hints_list": [
+                        "string"
+                    ]
+                },
+                "result_data": {}
+            },
+            "HINTS_AND_LEADING_QUESTIONS_UPDATE": {
+                "params": {
+                    "hints_list": [
+                        "string"
+                    ],
+                    "leading_questions": "string"
+                },
+                "result_data": {}
+            },
+            "SYSTEM_WAKEUP_WORD": {
+                "params": {
+                    "wake_up_word": "string"
+                },
+                "result_data": {}
+            },
+            "SYSTEM_WUW_INPUT_BOX": {
+                "params": {
+                    "new_word": "string",
+                    "wuw_list": [
+                        "string"
+                    ],
+                    "need_to_confirm": "boolean"
+                },
+                "result_data": {}
+            },
+            "VEHICLE_CONTROL_CAR_INFO": {
+                "params": {
+                    "info_type": "CarInfoType_enum"
+                },
+                "result_data": {}
+            },
+            "WEATHER_INFORMATION": {
+                "params": {
+                    "start_index": "int",
+                    "end_index": "int",
+                    "unit_of_temperature": "TemperatureUnit_enum",
+                    "search_criteria": {
+                        "date": "string",
+                        "time": "String",
+                        "locality": "String"
+                    },
+                    "focus_type": "WeatherFocusType_enum",
+                    "current_info": {
+                        "city": "string",
+                        "date": "string",
+                        "temperature": "string",
+                        "phenomena": "string",
+                        "weather_code": "int",
+                        "wind_speed": "string",
+                        "wind_strength_code": "int",
+                        "wind_direction": "int",
+                        "wind_direction_code": "int",
+                        "pm25": "int",
+                        "aqi": "int",
+                        "pm10": "int",
+                        "uv_index": "int"
+                    },
+                    "day_list": [
+                        {
+                            "city": "string",
+                            "date": "string",
+                            "day_of_week": "string",
+                            "day_weather_phenomena": "string",
+                            "day_weather_code": "int",
+                            "night_weather_phenomena": "string",
+                            "night_weather_code": "int",
+                            "high_temperature": "string",
+                            "low_temperature": "string"
+                        }
+                    ],
+                    "hour_list": [
+                        {
+                            "date": "string",
+                            "day_of_week": "string",
+                            "phenomena": "string",
+                            "temperature": "string",
+                            "weather_code": "int"
+                        }
+                    ]
+                },
+                "result_data": {}
+            },
+            "WEATHER_AQI": {
+                "params": {
+                    "start_index": "int",
+                    "end_index": "int",
+                    "unit_of_temperature": "TemperatureUnit_enum",
+                    "search_criteria": {
+                        "date": "string",
+                        "time": "String",
+                        "locality": "String"
+                    },
+                    "focus_type": "WeatherFocusType_enum",
+                    "current_info": {
+                        "city": "string",
+                        "date": "string",
+                        "temperature": "string",
+                        "phenomena": "string",
+                        "weather_code": "int",
+                        "wind_speed": "string",
+                        "wind_strength_code": "int",
+                        "wind_direction": "int",
+                        "wind_direction_code": "int",
+                        "pm25": "int",
+                        "aqi": "int",
+                        "pm10": "int",
+                        "uv_index": "int"
+                    },
+                    "day_list": [
+                        {
+                            "city": "string",
+                            "date": "string",
+                            "day_of_week": "string",
+                            "day_weather_phenomena": "string",
+                            "day_weather_code": "int",
+                            "night_weather_phenomena": "string",
+                            "night_weather_code": "int",
+                            "high_temperature": "string",
+                            "low_temperature": "string"
+                        }
+                    ],
+                    "hour_list": [
+                        {
+                            "date": "string",
+                            "day_of_week": "string",
+                            "phenomena": "string",
+                            "temperature": "string",
+                            "weather_code": "int"
+                        }
+                    ]
+                },
+                "result_data": {}
+            },
+            "MUSIC_FAVORITE_LIST": {
+                "params": {},
+                "result_data": {}
+            },
+            "AUDIOBOOK_FAVORITE_LIST": {
+                "params": {},
+                "result_data": {}
+            }
+        },
+        "PickList": {
+            "SYSTEM_ASK_FOR_WUW": {
+                "params": {
+                    "recommend_wuw_list": [
+                        "string"
+                    ]
+                }
+            },
+            "SYSTEM_CONFIRM_WUW": {
+                "params": {
+                    "phrase": "string"
+                }
+            },
+            "SYSTEM_WUW_CONFIRMED": {
+                "params": {
+                    "phrase": "string"
+                }
+            },
+            "SYSTEM_CHANGE_LANGUAGE": {
+                "params": {
+                    "language_list": [
+                        "string"
+                    ],
+                    "index": "int"
+                }
+            },
+            "SYSTEM_CHANGE_VOICE_NAME": {
+                "params": {
+                    "voice_name_list": [
+                        "string"
+                    ],
+                    "index": "int"
+                }
+            },
+            "NAVI_POI_LIST": {
+                "params": {
+                    "poi_list": [
+                        {
+                            "type": "PlaceType_enum",
+                            "name": "string",
+                            "address": "string",
+                            "longitude": "double",
+                            "latitude": "double",
+                            "distance": "double",
+                            "unit_of_distance": "MileageUnit_enum",
+                            "country": "string",
+                            "state": "string",
+                            "city": "string"
+                        }
+                    ],
+                    "title": "string"
+                }
+            },
+            "NAVI_ROUTE_OPTION_LIST": {
+                "params": {
+                    "route_option_list": [
+                        "NaviRouteOption_enum"
+                    ],
+                    "highlight_item_index": "int"
+                }
+            },
+            "NAVI_RECENT_LIST": {
+                "params": {
+                    "recent_list": [
+                        {
+                            "type": "PlaceType_enum",
+                            "name": "string",
+                            "address": "string",
+                            "longitude": "double",
+                            "latitude": "double",
+                            "distance": "double",
+                            "unit_of_distance": "MileageUnit_enum",
+                            "country": "string",
+                            "state": "string",
+                            "city": "string"
+                        }
+                    ]
+                }
+            },
+            "NEWS_LIST": {
+                "params": {
+                    "news_list": [
+                        {
+                            "title": "string",
+                            "source": "string",
+                            "content": "string"
+                        }
+                    ],
+                    "keywords": "string"
+                }
+            },
+            "PHONE_CONTACT_LIST": {
+                "params": {
+                    "intention": "IntentionType_enum",
+                    "contact_list": [
+                        {
+                            "contact_id": "int",
+                            "contact_name": "string"
+                        }
+                    ]
+                }
+            },
+            "PHONE_CALL_LOG": {
+                "params": {
+                    "intention": "IntentionType_enum",
+                    "call_log_type": "CallLogType_enum",
+                    "call_log_list": [
+                        {
+                            "contact": {
+                                "contact_id": "int",
+                                "contact_name": "string"
+                            },
+                            "timestamp": "long",
+                            "phone_number": {
+                                "number": "string",
+                                "number_type": "PhoneNumberType_enum"
+                            }
+                        }
+                    ]
+                }
+            },
+            "PHONE_CONTACT_DISAMBIG_LIST": {
+                "params": {
+                    "contact_list": [
+                        {
+                            "contact_id": "int",
+                            "contact_name": "string"
+                        }
+                    ]
+                }
+            },
+            "PHONE_NUMBER_DISAMBIG_LIST": {
+                "params": {
+                    "contact": {
+                        "contact_id": "int",
+                        "contact_name": "string"
+                    },
+                    "phone_number_list": [
+                        {
+                            "number": "string",
+                            "number_type": "PhoneNumberType_enum"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "SystemCalls": {
+        "comments_begin": "#########################################################################################################",
+        "comments1": [
+            "system calls are called by dialog manager, APP should impl callback 'fnSystemCall(user, msgId, msgJson)' in dialog_api.h",
+            "all system calls should be handled in that callback.",
+            "and 'dialogResponse(msgId, respJson)' must be called for every system call.",
+            "NOTE: this callback is a sync call, so don't block this function in APP!",
+            "      if a system call takes times to do the job, APP should return 'fnSystemCall' firstly, then call 'dialogResponse' after job done.",
+            "system call is send to APP via the param 'msgJson', in json format, for example:"
+        ],
+        "msgJson_example": {
+            "type": "CALL",
+            "name": "call_name",
+            "params": {
+                "param1": "value1",
+                "param2": "value2"
+            }
+        },
+        "comments2": [
+            "params obj is optional if this call has no param",
+            "APP should retuan another json string to dialog manager, for example:"
+        ],
+        "result_example": {
+            "type": "RESP",
+            "name": "call_name",
+            "results": {
+                "result1": "value1",
+                "result2": "value2"
+            }
+        },
+        "comments3": [
+            "result obj is optional if this call has no result. or, you can also pass an empty obj to dialog manager",
+            "if results are defined but APP didn't return any result, dialog manager will try to use the defaults values"
+        ],
+        "comments_end": "#########################################################################################################",
+        "Audiobook": {
+            "queryCurrentAudiobookInfo": {
+                "id": "int",
+                "name": "queryCurrentAudiobookInfo",
+                "domain": "Audiobook",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "audiobook_info": {
+                            "programName": "string",
+                            "category": "string",
+                            "tag": "string",
+                            "artist": "string"
+                        }
+                    }
+                }
+            },
+            "searchAudiobook": {
+                "id": "int",
+                "name": "searchAudiobook",
+                "domain": "Audiobook",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "search_criteria": {
+                        "programName": "string",
+                        "category": "string",
+                        "tag": "string",
+                        "artist": "string"
+                    }
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "audiobook_info": {
+                            "programName": "string",
+                            "category": "string",
+                            "tag": "string",
+                            "artist": "string"
+                        }
+                    }
+                }
+            },
+            "playAudiobook": {
+                "id": "int",
+                "name": "playAudiobook",
+                "domain": "Audiobook",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "audiobook_info": {
+                        "programName": "string",
+                        "category": "string",
+                        "tag": "string",
+                        "artist": "string"
+                    }
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "playControl": {
+                "id": "int",
+                "name": "playControl",
+                "domain": "Audiobook",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "control_type": "MediaPlayControlType_enum",
+                    "value": "int"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "play_rate": "int"
+                    }
+                }
+            },
+            "queryMaxPlayRate": {
+                "id": "int",
+                "name": "queryMaxPlayRate",
+                "domain": "Audiobook",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "max_rate": "int"
+                    }
+                }
+            },
+            "favoriteControl": {
+                "id": "int",
+                "name": "favoriteControl",
+                "domain": "Audiobook",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "control_type": "FavoriteControlType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "checkPlayListAvailability": {
+                "id": "int",
+                "name": "checkPlayListAvailability",
+                "domain": "Audiobook",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "play_list_type": "PlayListType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_available": "boolean"
+                    }
+                }
+            }
+        },
+        "CC": {
+            "setVolume": {
+                "id": "int",
+                "name": "setVolume",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "percentage": "int",
+                    "stream_type": "StreamType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getVolume": {
+                "id": "int",
+                "name": "getVolume",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "stream_type": "StreamType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "percentage": "int"
+                    }
+                }
+            },
+            "controlVolume": {
+                "id": "int",
+                "name": "controlVolume",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setScreenBrightness": {
+                "id": "int",
+                "name": "setScreenBrightness",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "percentage": "int"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getScreenBrightness": {
+                "id": "int",
+                "name": "getScreenBrightness",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "percentage": "int"
+                    }
+                }
+            },
+            "controlWifi": {
+                "id": "int",
+                "name": "controlWifi",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "controlBluetooth": {
+                "id": "int",
+                "name": "controlBluetooth",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "openApp": {
+                "id": "int",
+                "name": "openApp",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "app_name": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "closeApp": {
+                "id": "int",
+                "name": "closeApp",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "app_name": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "cancel": {
+                "id": "int",
+                "name": "cancel",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "checkFunctionAvailability": {
+                "id": "int",
+                "name": "checkFunctionAvailability",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "cc_function": "CCFunction_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "check_result": "FunctionAvailability_enum"
+                    }
+                }
+            },
+            "setScreenState": {
+                "id": "int",
+                "name": "setScreenState",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getScreenState": {
+                "id": "int",
+                "name": "getScreenState",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "state": "Switch_enum"
+                    }
+                }
+            },
+            "getActiveStreamType": {
+                "id": "int",
+                "name": "getActiveStreamType",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "stream_type": "StreamType_enum"
+                    }
+                }
+            },
+            "checkVolumeControlAvailability": {
+                "id": "int",
+                "name": "checkVolumeControlAvailability",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "stream_type": "StreamType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_available": "boolean"
+                    }
+                }
+            },
+            "isForegroundApp": {
+                "id": "int",
+                "name": "isForegroundApp",
+                "domain": "CC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "app_name": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_foreground": "boolean"
+                    }
+                }
+            }
+        },
+        "DashCam": {
+            "checkStatus": {
+                "id": "int",
+                "name": "checkStatus",
+                "domain": "DashCam",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_malfuctional": "boolean"
+                    }
+                }
+            },
+            "checkConnectionStatus": {
+                "id": "int",
+                "name": "checkConnectionStatus",
+                "domain": "DashCam",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_connected": "boolean"
+                    }
+                }
+            },
+            "takePhoto": {
+                "id": "int",
+                "name": "takePhoto",
+                "domain": "DashCam",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "controlEmergencyRecording": {
+                "id": "int",
+                "name": "controlEmergencyRecording",
+                "domain": "DashCam",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "checkRecordingAvailability": {
+                "id": "int",
+                "name": "checkRecordingAvailability",
+                "domain": "DashCam",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "date": "string",
+                    "recording_type": "RecordingType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_available": "boolean"
+                    }
+                }
+            },
+            "controlADAS": {
+                "id": "int",
+                "name": "controlADAS",
+                "domain": "DashCam",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "controlPulloverRecording": {
+                "id": "int",
+                "name": "controlPulloverRecording",
+                "domain": "DashCam",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "manageRecordings": {
+                "id": "int",
+                "name": "manageRecordings",
+                "domain": "DashCam",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "ManageRecordingsAction_enum",
+                    "date": "string",
+                    "recording_type": "RecordingType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            }
+        },
+        "Fitness": {
+            "getRepsLimitation": {
+                "id": "int",
+                "name": "getRepsLimitation",
+                "domain": "Fitness",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "max_reps": "number"
+                    }
+                }
+            },
+            "getPoundsLimitation": {
+                "id": "int",
+                "name": "getPoundsLimitation",
+                "domain": "Fitness",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "max_pounds": "number"
+                    }
+                }
+            },
+            "getWorkoutReportInfo": {
+                "id": "int",
+                "name": "getWorkoutReportInfo",
+                "domain": "Fitness",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "hr_max": "number",
+                        "average_pace_minutes": "number",
+                        "training_name": "string",
+                        "exercise_time_minutes": "number",
+                        "running_distance_meters": "number"
+                    }
+                }
+            },
+            "endWorkout": {
+                "id": "int",
+                "name": "endWorkout",
+                "domain": "Fitness",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "utterance": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "ttsText": "string"
+                    }
+                }
+            },
+            "pauseWorkout": {
+                "id": "int",
+                "name": "pauseWorkout",
+                "domain": "Fitness",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "utterance": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "ttsText": "string"
+                    }
+                }
+            },
+            "resumeWorkout": {
+                "id": "int",
+                "name": "resumeWorkout",
+                "domain": "Fitness",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "utterance": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "ttsText": "string"
+                    }
+                }
+            },
+            "skipInterval": {
+                "id": "int",
+                "name": "skipInterval",
+                "domain": "Fitness",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "utterance": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "isSkipped": "boolean"
+                    }
+                }
+            },
+            "nextRound": {
+                "id": "int",
+                "name": "nextRound",
+                "domain": "Fitness",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "hasNext": "boolean"
+                    }
+                }
+            }
+        },
+        "HMI": {
+            "display": {
+                "id": "int",
+                "name": "display",
+                "domain": "HMI",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "scenario": "DisplayScenario_enum",
+                    "data": "any"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": "any"
+                }
+            },
+            "pageControl": {
+                "id": "int",
+                "name": "pageControl",
+                "domain": "HMI",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "scenario": "PickListScenario_enum",
+                    "page_control_type": "PageControlType_enum",
+                    "page_ordinal": "int"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "start_item_index": "int",
+                        "num_of_items": "int",
+                        "start_item_ordinal": "int"
+                    }
+                }
+            },
+            "showPicklist": {
+                "id": "int",
+                "name": "showPicklist",
+                "domain": "HMI",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "scenario": "PickListScenario_enum",
+                    "data": "any"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "page_info": {
+                            "start_item_index": "int",
+                            "start_item_ordinal": "int",
+                            "num_of_items": "int",
+                            "total_page_number": "int"
+                        }
+                    }
+                }
+            },
+            "highlightItem": {
+                "id": "int",
+                "name": "highlightItem",
+                "domain": "HMI",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "item_ordinal": "int"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            }
+        },
+        "HVAC": {
+            "isEngineStarted": {
+                "id": "int",
+                "name": "isEngineStarted",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_started": "boolean"
+                    }
+                }
+            },
+            "isPowerOn": {
+                "id": "int",
+                "name": "isPowerOn",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_on": "boolean"
+                    }
+                }
+            },
+            "isEngineOnRequired": {
+                "id": "int",
+                "name": "isEngineOnRequired",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "hvac_function": "HvacFunction_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_required": "boolean"
+                    }
+                }
+            },
+            "isPowerOnRequired": {
+                "id": "int",
+                "name": "isPowerOnRequired",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "hvac_function": "HvacFunction_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_required": "boolean"
+                    }
+                }
+            },
+            "getHvacState": {
+                "id": "int",
+                "name": "getHvacState",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "hvac_function": "HvacFunction_enum",
+                    "vehicle_area": "VehicleArea_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "state_list": [
+                            {
+                                "vehicle_area": "VehicleArea_enum",
+                                "state": "Switch_enum"
+                            }
+                        ]
+                    }
+                }
+            },
+            "getACTemperature": {
+                "id": "int",
+                "name": "getACTemperature",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "vehicle_area": "VehicleArea_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "temperature_info_list": [
+                            {
+                                "vehicle_area": "VehicleArea_enum",
+                                "value": "double",
+                                "unit_of_temperature": "TemperatureUnit_enum"
+                            }
+                        ]
+                    }
+                }
+            },
+            "getHavcLevel": {
+                "id": "int",
+                "name": "getHavcLevel",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "hvac_function": "HvacFunction_enum",
+                    "vehicle_area": "VehicleArea_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "fuction_level_list": [
+                            {
+                                "vehicle_area": "VehicleArea_enum",
+                                "level": "int"
+                            }
+                        ]
+                    }
+                }
+            },
+            "getMaxHavcLevel": {
+                "id": "int",
+                "name": "getMaxHavcLevel",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "hvac_function": "HvacFunction_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "max_level": "int"
+                    }
+                }
+            },
+            "getFanDirection": {
+                "id": "int",
+                "name": "getFanDirection",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "wind_direction_list": [
+                            "WindDirection_enum"
+                        ]
+                    }
+                }
+            },
+            "getDefroster": {
+                "id": "int",
+                "name": "getDefroster",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "windshield": "WindshieldTypeEnum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "defroster_state_list": [
+                            {
+                                "windshield_type": "WindshieldType_enum",
+                                "state": "Switch_enum"
+                            }
+                        ]
+                    }
+                }
+            },
+            "checkHvacFunctionAvailability": {
+                "id": "int",
+                "name": "checkHvacFunctionAvailability",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "hvac_function": "HvacFunction_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "check_result": "FunctionAvailability_enum"
+                    }
+                }
+            },
+            "setFanDirection": {
+                "id": "int",
+                "name": "setFanDirection",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum",
+                    "wind_direction_list": [
+                        "WindDirection_enum"
+                    ]
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setHvacState": {
+                "id": "int",
+                "name": "setHvacState",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "hvac_function": "HvacFunction_enum",
+                    "action": "Switch_enum",
+                    "vehicle_area": "VehicleArea_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setHvacLevel": {
+                "id": "int",
+                "name": "setHvacLevel",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "hvac_function": "HvacFunction_enum",
+                    "action": "HVACControlAction_enum",
+                    "level": "int",
+                    "vehicle_area": "VehicleArea_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "current_value": "int"
+                    }
+                }
+            },
+            "setDefroster": {
+                "id": "int",
+                "name": "setDefroster",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "Windshield": "WindshieldType_enum",
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setACTemperature": {
+                "id": "int",
+                "name": "setACTemperature",
+                "domain": "HVAC",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "HVACControlAction_enum",
+                    "vehicle_area": "VehicleArea_enum",
+                    "value": "int",
+                    "unit_of_temperature": "TemperatureUnit_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "current_value": "int"
+                    }
+                }
+            }
+        },
+        "Music": {
+            "queryCurrentMusicInfo": {
+                "id": "int",
+                "name": "queryCurrentMusicInfo",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "music_info": {
+                            "title": "string",
+                            "genre": "string",
+                            "album": "string",
+                            "artist": "string"
+                        },
+                        "source": "MediaSource_enum"
+                    }
+                }
+            },
+            "queryMusicInfoByTitle": {
+                "id": "int",
+                "name": "queryMusicInfoByTitle",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "title": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "music_info": {
+                            "title": "string",
+                            "genre": "string",
+                            "album": "string",
+                            "artist": "string"
+                        }
+                    }
+                }
+            },
+            "queryArtistByAlbum": {
+                "id": "int",
+                "name": "queryArtistByAlbum",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "album": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "artist": "string"
+                    }
+                }
+            },
+            "getSimilarArtist": {
+                "id": "int",
+                "name": "getSimilarArtist",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "artist": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "artist": "string"
+                    }
+                }
+            },
+            "checkMusicAvailability": {
+                "id": "int",
+                "name": "checkMusicAvailability",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "music_info": {
+                        "title": "string",
+                        "genre": "string",
+                        "album": "string",
+                        "artist": "string"
+                    },
+                    "source": "MediaSource_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_available": "boolean"
+                    }
+                }
+            },
+            "checkSourceAvailability": {
+                "id": "int",
+                "name": "checkSourceAvailability",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "source": "MediaSource_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_available": "boolean"
+                    }
+                }
+            },
+            "checkPlayListAvailability": {
+                "id": "int",
+                "name": "checkPlayListAvailability",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "play_list_type": "PlayListType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_available": "boolean"
+                    }
+                }
+            },
+            "playMusic": {
+                "id": "int",
+                "name": "playMusic",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "music_info": {
+                        "title": "string",
+                        "genre": "string",
+                        "album": "string",
+                        "artist": "string"
+                    },
+                    "search_phrase": "string",
+                    "source": "MediaSource_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "playFavoriteMusic": {
+                "id": "int",
+                "name": "playFavoriteMusic",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "source": "MediaSource_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setPlayMode": {
+                "id": "int",
+                "name": "setPlayMode",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "play_mode": "PlayMode_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "playControl": {
+                "id": "int",
+                "name": "playControl",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "control_type": "MediaPlayControlType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "favoriteControl": {
+                "id": "int",
+                "name": "favoriteControl",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "control_type": "FavoriteControlType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "isFavoriteListFull": {
+                "id": "int",
+                "name": "isFavoriteListFull",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_full": "boolean"
+                    }
+                }
+            },
+            "isMusicInfoVisible": {
+                "id": "int",
+                "name": "isMusicInfoVisible",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_visible": "boolean"
+                    }
+                }
+            },
+            "getRecentPlayedSource": {
+                "id": "int",
+                "name": "getRecentPlayedSource",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "source": "MediaSource_enum"
+                    }
+                }
+            },
+            "openMusicPlayer": {
+                "id": "int",
+                "name": "openMusicPlayer",
+                "domain": "Music",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            }
+        },
+        "News": {
+            "playNews": {
+                "id": "int",
+                "name": "playNews",
+                "domain": "News",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "newslist": [
+                        {
+                            "title": "string",
+                            "source": "string",
+                            "content": "string"
+                        }
+                    ],
+                    "news_info": {
+                        "date": "string",
+                        "provider": "string",
+                        "cat": "string",
+                        "topic": "string"
+                    }
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "newsPlayControl": {
+                "id": "int",
+                "name": "newsPlayControl",
+                "domain": "News",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "control_type": "MediaPlayControlType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "checkNewsAvailability": {
+                "id": "int",
+                "name": "checkNewsAvailability",
+                "domain": "News",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "news_info": {
+                        "date": "string",
+                        "provider": "string",
+                        "cat": "string",
+                        "topic": "string"
+                    }
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_available": "boolean"
+                    }
+                }
+            },
+            "getSimilarNewsInfo": {
+                "id": "int",
+                "name": "getSimilarNewsInfo",
+                "domain": "News",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "news_info": {
+                        "date": "string",
+                        "provider": "string",
+                        "cat": "string",
+                        "topic": "string"
+                    }
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "news_info": {
+                            "date": "string",
+                            "provider": "string",
+                            "cat": "string",
+                            "topic": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "Phone": {
+            "callOperation": {
+                "id": "int",
+                "name": "callOperation",
+                "domain": "Phone",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action_type": "PhoneCallAction_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getCallLog": {
+                "id": "int",
+                "name": "getCallLog",
+                "domain": "Phone",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "call_log_type": "CallLogType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "call_log_list": [
+                            {
+                                "contact": {
+                                    "contact_id": "int",
+                                    "contact_name": "string"
+                                },
+                                "timestamp": "long",
+                                "phone_number": {
+                                    "number": "string",
+                                    "number_type": "PhoneNumberType_enum"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "getAllContacts": {
+                "id": "int",
+                "name": "getAllContacts",
+                "domain": "Phone",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "contact_list": [
+                            {
+                                "contact_id": "int",
+                                "contact_name": "string"
+                            }
+                        ]
+                    }
+                }
+            },
+            "getStatus": {
+                "id": "int",
+                "name": "getStatus",
+                "domain": "Phone",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_phone_connected": "boolean",
+                        "has_signal": "boolean"
+                    }
+                }
+            },
+            "makeCall": {
+                "id": "int",
+                "name": "makeCall",
+                "domain": "Phone",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "phone_number": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "need_user_confirmation": "boolean"
+                    }
+                }
+            },
+            "getPhoneNumber": {
+                "id": "int",
+                "name": "getPhoneNumber",
+                "domain": "Phone",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "contact_id": "int"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "number_list": [
+                            {
+                                "number": "string",
+                                "number_type": "PhoneNumberType_enum"
+                            }
+                        ]
+                    }
+                }
+            },
+            "getServiceNumber": {
+                "id": "int",
+                "name": "getServiceNumber",
+                "domain": "Phone",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "service": "ServiceType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "number": "string"
+                    }
+                }
+            },
+            "getEmergencyNumber": {
+                "id": "int",
+                "name": "getEmergencyNumber",
+                "domain": "Phone",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "emergency_type": "EmergencyType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "number": "string"
+                    }
+                }
+            }
+        },
+        "Radio": {
+            "controlRadio": {
+                "id": "int",
+                "name": "controlRadio",
+                "domain": "Radio",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "playRadio": {
+                "id": "int",
+                "name": "playRadio",
+                "domain": "Radio",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "mode": "RadioMode_enum",
+                    "name": "string",
+                    "freq": "double"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "actual_freq": "double"
+                    }
+                }
+            },
+            "playControl": {
+                "id": "int",
+                "name": "playControl",
+                "domain": "Radio",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "control_type": "MediaPlayControlType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "scanControl": {
+                "id": "int",
+                "name": "scanControl",
+                "domain": "Radio",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "control_type": "StartStop_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "playFavorite": {
+                "id": "int",
+                "name": "playFavorite",
+                "domain": "Radio",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "checkRadioStationAvailability": {
+                "id": "int",
+                "name": "checkRadioStationAvailability",
+                "domain": "Radio",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "name": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_available": "boolean"
+                    }
+                }
+            },
+            "checkFavoriteListAvailability": {
+                "id": "int",
+                "name": "checkFavoriteListAvailability",
+                "domain": "Radio",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_available": "boolean"
+                    }
+                }
+            },
+            "favoriteControl": {
+                "id": "int",
+                "name": "favoriteControl",
+                "domain": "Radio",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "control_type": "FavoriteControlType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "queryCurrentRadioInfo": {
+                "id": "int",
+                "name": "queryCurrentRadioInfo",
+                "domain": "Radio",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "mode": "RadioMode_enum",
+                        "name": "string",
+                        "freq": "double"
+                    }
+                }
+            }
+        },
+        "Stock": {
+            "isStockInfoVisible": {
+                "id": "int",
+                "name": "isStockInfoVisible",
+                "domain": "Stock",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_visible": "boolean"
+                    }
+                }
+            }
+        },
+        "System": {
+            "getNetworkStatus": {
+                "id": "int",
+                "name": "getNetworkStatus",
+                "domain": "System",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_network_connected": "boolean"
+                    }
+                }
+            },
+            "checkPermission": {
+                "id": "int",
+                "name": "checkPermission",
+                "domain": "System",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "permission": "PermissionName_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "granted": "boolean"
+                    }
+                }
+            },
+            "requestPermission": {
+                "id": "int",
+                "name": "requestPermission",
+                "domain": "System",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "permission": "PermissionName_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "granted": "boolean"
+                    }
+                }
+            },
+            "requestAudioFocus": {
+                "id": "int",
+                "name": "requestAudioFocus",
+                "domain": "System",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "releaseAudioFocus": {
+                "id": "int",
+                "name": "releaseAudioFocus",
+                "domain": "System",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getMediaStateBeforeConversation": {
+                "id": "int",
+                "name": "getMediaStateBeforeConversation",
+                "domain": "System",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "mediaType": "MediaType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "media_state": "MediaState_enum"
+                    }
+                }
+            },
+            "getActiveMediaTypeBeforeConversation": {
+                "id": "int",
+                "name": "getActiveMediaTypeBeforeConversation",
+                "domain": "System",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "media_type": "MediaType_enum"
+                    }
+                }
+            },
+            "getForegroundMediaType": {
+                "id": "int",
+                "name": "getForegroundMediaType",
+                "domain": "System",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "media_type": "MediaType_enum"
+                    }
+                }
+            },
+            "getShortcutCommands": {
+                "id": "int",
+                "name": "getShortcutCommands",
+                "domain": "System",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "short_cuts": [
+                            "string"
+                        ]
+                    }
+                }
+            }
+        },
+        "UDE": {
+            "isMapOpen": {
+                "id": "int",
+                "name": "isMapOpen",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_map_open": "boolean"
+                    }
+                }
+            },
+            "openMap": {
+                "id": "int",
+                "name": "openMap",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "closeMap": {
+                "id": "int",
+                "name": "closeMap",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "isNavigating": {
+                "id": "int",
+                "name": "isNavigating",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_navigating": "boolean"
+                    }
+                }
+            },
+            "navigateToDestination": {
+                "id": "int",
+                "name": "navigateToDestination",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "destination": {
+                        "type": "PlaceType_enum",
+                        "name": "string",
+                        "address": "string",
+                        "longitude": "double",
+                        "latitude": "double",
+                        "distance": "double",
+                        "unit_of_distance": "MileageUnit_enum",
+                        "country": "string",
+                        "state": "string",
+                        "city": "string"
+                    },
+                    "route_option": "NaviRouteOption_enum",
+                    "way_points": [
+                        {
+                            "type": "PlaceType_enum",
+                            "name": "string",
+                            "address": "string",
+                            "longitude": "double",
+                            "latitude": "double",
+                            "distance": "double",
+                            "unit_of_distance": "MileageUnit_enum",
+                            "country": "string",
+                            "state": "string",
+                            "city": "string"
+                        }
+                    ],
+                    "avoidance_points": [
+                        {
+                            "type": "PlaceType_enum",
+                            "name": "string",
+                            "address": "string",
+                            "longitude": "double",
+                            "latitude": "double",
+                            "distance": "double",
+                            "unit_of_distance": "MileageUnit_enum",
+                            "country": "string",
+                            "state": "string",
+                            "city": "string"
+                        }
+                    ]
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "exitNavigation": {
+                "id": "int",
+                "name": "exitNavigation",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setDefaultRouteOption": {
+                "id": "int",
+                "name": "setDefaultRouteOption",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "route_option": "NaviRouteOption_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getRouteOption": {
+                "id": "int",
+                "name": "getRouteOption",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "route_option": "NaviRouteOption_enum"
+                    }
+                }
+            },
+            "getWayPoints": {
+                "id": "int",
+                "name": "getWayPoints",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "way_points_list": [
+                            {
+                                "type": "PlaceType_enum",
+                                "name": "string",
+                                "address": "string",
+                                "longitude": "double",
+                                "latitude": "double",
+                                "distance": "double",
+                                "unit_of_distance": "MileageUnit_enum",
+                                "country": "string",
+                                "state": "string",
+                                "city": "string"
+                            }
+                        ]
+                    }
+                }
+            },
+            "getMaxWayPoints": {
+                "id": "int",
+                "name": "getMaxWayPoints",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "number": "int"
+                    }
+                }
+            },
+            "getAvoidPoints": {
+                "id": "int",
+                "name": "getAvoidPoints",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "avoid_points_list": [
+                            {
+                                "type": "PlaceType_enum",
+                                "name": "string",
+                                "address": "string",
+                                "longitude": "double",
+                                "latitude": "double",
+                                "distance": "double",
+                                "unit_of_distance": "MileageUnit_enum",
+                                "country": "string",
+                                "state": "string",
+                                "city": "string"
+                            }
+                        ]
+                    }
+                }
+            },
+            "searchPoiCategoryByAddress": {
+                "id": "int",
+                "name": "searchPoiCategoryByAddress",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "category": "string",
+                    "location_reference": "LocationReference_enum",
+                    "poi_name": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "poi_list": [
+                            {
+                                "type": "PlaceType_enum",
+                                "name": "string",
+                                "address": "string",
+                                "longitude": "double",
+                                "latitude": "double",
+                                "distance": "double",
+                                "unit_of_distance": "MileageUnit_enum",
+                                "country": "string",
+                                "state": "string",
+                                "city": "string"
+                            }
+                        ]
+                    }
+                }
+            },
+            "getMapDisplayMode": {
+                "id": "int",
+                "name": "getMapDisplayMode",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "mode_list": [
+                            "MapDisplayMode_enum"
+                        ]
+                    }
+                }
+            },
+            "setMapDisplayMode": {
+                "id": "int",
+                "name": "setMapDisplayMode",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "mode": "MapDisplayMode_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "zoomMap": {
+                "id": "int",
+                "name": "zoomMap",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "zoom_type": "ZoomMapType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setDefaultAddressByType": {
+                "id": "int",
+                "name": "setDefaultAddressByType",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "address_type": "AddressType_enum",
+                    "address": {
+                        "type": "PlaceType_enum",
+                        "name": "string",
+                        "address": "string",
+                        "longitude": "double",
+                        "latitude": "double",
+                        "distance": "double",
+                        "unit_of_distance": "MileageUnit_enum",
+                        "country": "string",
+                        "state": "string",
+                        "city": "string"
+                    }
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getAddressByType": {
+                "id": "int",
+                "name": "getAddressByType",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "address_type": "AddressType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "type": "PlaceType_enum",
+                        "name": "string",
+                        "address": "string",
+                        "longitude": "double",
+                        "latitude": "double",
+                        "distance": "double",
+                        "unit_of_distance": "MileageUnit_enum",
+                        "country": "string",
+                        "state": "string",
+                        "city": "string"
+                    }
+                }
+            },
+            "queryTripInfoByLocation": {
+                "id": "int",
+                "name": "queryTripInfoByLocation",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "longitude": "double",
+                    "latitude": "double"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "distance": "double",
+                        "unit_of_distance": "MileageUnit_enum",
+                        "hours": "int",
+                        "minutes": "int"
+                    }
+                }
+            },
+            "queryTrafficCondition": {
+                "id": "int",
+                "name": "queryTrafficCondition",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "location_reference": "LocationReference_enum",
+                    "address_name": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "searchPoiByName": {
+                "id": "int",
+                "name": "searchPoiByName",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "poi_name": "string"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "poi_list": [
+                            {
+                                "type": "PlaceType_enum",
+                                "name": "string",
+                                "address": "string",
+                                "longitude": "double",
+                                "latitude": "double",
+                                "distance": "double",
+                                "unit_of_distance": "MileageUnit_enum",
+                                "country": "string",
+                                "state": "string",
+                                "city": "string"
+                            }
+                        ]
+                    }
+                }
+            },
+            "getRecentList": {
+                "id": "int",
+                "name": "getRecentList",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "recent_list": [
+                            {
+                                "type": "PlaceType_enum",
+                                "name": "string",
+                                "address": "string",
+                                "longitude": "double",
+                                "latitude": "double",
+                                "distance": "double",
+                                "unit_of_distance": "MileageUnit_enum",
+                                "country": "string",
+                                "state": "string",
+                                "city": "string"
+                            }
+                        ]
+                    }
+                }
+            },
+            "controlTrafficInfoView": {
+                "id": "int",
+                "name": "controlTrafficInfoView",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "isNaviInfoVisible": {
+                "id": "int",
+                "name": "isNaviInfoVisible",
+                "domain": "UDE",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_visible": "boolean"
+                    }
+                }
+            }
+        },
+        "VehicleControl": {
+            "checkVehicleFunctionAvailability": {
+                "id": "int",
+                "name": "checkVehicleFunctionAvailability",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "vehicle_function": "VehicleFunction_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "check_result": "FunctionAvailability_enum"
+                    }
+                }
+            },
+            "queryEnergyConsumption": {
+                "id": "int",
+                "name": "queryEnergyConsumption",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "calculation_method": "CalculationMethod_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "value": "double",
+                        "unit": "EnergyConsumptionUnit_enum"
+                    }
+                }
+            },
+            "queryRemainingMileage": {
+                "id": "int",
+                "name": "queryRemainingMileage",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "remaining_mileage": "int",
+                        "unit": "MileageUnit_enum"
+                    }
+                }
+            },
+            "queryEnergyType": {
+                "id": "int",
+                "name": "queryEnergyType",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "energy_type": "EnergyType_enum"
+                    }
+                }
+            },
+            "getMileageInfo": {
+                "id": "int",
+                "name": "getMileageInfo",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "period": "PeriodType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "mileage": "int",
+                        "unit": "MileageUnit_enum"
+                    }
+                }
+            },
+            "queryNextMaintenance": {
+                "id": "int",
+                "name": "queryNextMaintenance",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "status": "MaintenanceState_enum",
+                        "remaining_days": "int",
+                        "remaining_mileage": "int",
+                        "unit": "MileageUnit_enum"
+                    }
+                }
+            },
+            "queryRecentMaxSpeed": {
+                "id": "int",
+                "name": "queryRecentMaxSpeed",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "period": "PeriodType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "max_speed": "int",
+                        "is_dangerous": "boolean",
+                        "unit": "SpeedUnits_enum"
+                    }
+                }
+            },
+            "queryCurrentSpeed": {
+                "id": "int",
+                "name": "queryCurrentSpeed",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "current_speed": "int",
+                        "is_dangerous": "boolean",
+                        "unit": "SpeedUnits_enum"
+                    }
+                }
+            },
+            "getSunroofState": {
+                "id": "int",
+                "name": "getSunroofState",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "percentage": "int",
+                        "is_tilted": "boolean"
+                    }
+                }
+            },
+            "isRaining": {
+                "id": "int",
+                "name": "isRaining",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_raining": "YNU_enum"
+                    }
+                }
+            },
+            "controlSunroof": {
+                "id": "int",
+                "name": "controlSunroof",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "open_percentage": "int",
+                    "is_tilted": "boolean"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "openGasCap": {
+                "id": "int",
+                "name": "openGasCap",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "controlTrunk": {
+                "id": "int",
+                "name": "controlTrunk",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "OpenClose_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "controlHeadlights": {
+                "id": "int",
+                "name": "controlHeadlights",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "controlHighBeams": {
+                "id": "int",
+                "name": "controlHighBeams",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "isDarkOutside": {
+                "id": "int",
+                "name": "isDarkOutside",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "is_dark": "YNU_enum"
+                    }
+                }
+            },
+            "getWindowState": {
+                "id": "int",
+                "name": "getWindowState",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "vehicle_area": "VehicleArea_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "values": [
+                            {
+                                "vehicle_area": "VehicleArea_enum",
+                                "percentage": "int"
+                            }
+                        ]
+                    }
+                }
+            },
+            "setWindowState": {
+                "id": "int",
+                "name": "setWindowState",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "percentage": "int",
+                    "vehicle_area": "VehicleArea_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getSunshadeState": {
+                "id": "int",
+                "name": "getSunshadeState",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "percentage": "int"
+                    }
+                }
+            },
+            "setSunshadeState": {
+                "id": "int",
+                "name": "setSunshadeState",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "percentage": "int"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getAmbientLightState": {
+                "id": "int",
+                "name": "getAmbientLightState",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "brightness": "int"
+                    }
+                }
+            },
+            "setAmbientLightState": {
+                "id": "int",
+                "name": "setAmbientLightState",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "brightness": "int"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setAmbientLightColor": {
+                "id": "int",
+                "name": "setAmbientLightColor",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "color": "Color_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "controlPanoramicView": {
+                "id": "int",
+                "name": "controlPanoramicView",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "view_mode": "PanoramicViewMode_enum",
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "controlHUD": {
+                "id": "int",
+                "name": "controlHUD",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setHUDMode": {
+                "id": "int",
+                "name": "setHUDMode",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "hud_mode": "HUDMode_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setDrivingMode": {
+                "id": "int",
+                "name": "setDrivingMode",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "driving_mode": "DrivingMode_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "setActiveSpeakers": {
+                "id": "int",
+                "name": "setActiveSpeakers",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "speaker": "Speakers_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "checkVehicleStatus": {
+                "id": "int",
+                "name": "checkVehicleStatus",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "check_type": "VehicleCheckType_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "status": "VehicleStatus_enum"
+                    }
+                }
+            },
+            "queryTirePressure": {
+                "id": "int",
+                "name": "queryTirePressure",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "vehicle_type": "VehicleType_enum",
+                        "unit": "TireUnit_enum",
+                        "values": [
+                            {
+                                "position": "WheelPosition_enum",
+                                "tire_pressure": "double"
+                            }
+                        ]
+                    }
+                }
+            },
+            "queryEngineTemperature": {
+                "id": "int",
+                "name": "queryEngineTemperature",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "temperature": "int",
+                        "unit": "TemperatureUnit_enum"
+                    }
+                }
+            },
+            "controlLock": {
+                "id": "int",
+                "name": "controlLock",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "action": "LockAction_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "findVehicle": {
+                "id": "int",
+                "name": "findVehicle",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "getVehicleConnectionStatus": {
+                "id": "int",
+                "name": "getVehicleConnectionStatus",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "status": "VehicleConnectionStatus_enum"
+                    }
+                }
+            },
+            "setClusterMode": {
+                "id": "int",
+                "name": "setClusterMode",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {
+                    "mode": "ClusterMode_enum",
+                    "action": "Switch_enum"
+                },
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {}
+                }
+            },
+            "hasSunshadeSwitch": {
+                "id": "int",
+                "name": "hasSunshadeSwitch",
+                "domain": "VehicleControl",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "value": "boolean"
+                    }
+                }
+            }
+        },
+        "Weather": {
+            "queryCurrentAirQuality": {
+                "id": "int",
+                "name": "queryCurrentAirQuality",
+                "domain": "Weather",
+                "type": "REQUEST",
+                "timeout": 5000,
+                "params": {},
+                "results": {
+                    "result_code": "ResultCode_enum",
+                    "error_msg": "string",
+                    "data": {
+                        "index": "int",
+                        "pm25_index": "int",
+                        "pm10_index": "int"
+                    }
+                }
+            }
+        }
+    },
+    "AppEvents": {
+        "comments_begin": "#########################################################################################################",
+        "comments": [
+            "events are sent to dialog manager by APP via 'dialogEvent(msgJson)' in dialog_api.h",
+            "to notify dialog manager that some events are triggered",
+            "keep in mind: 1. normal events will be handled in the same thread as dialog!",
+            "              2. some special events those won't affect dialog/states will be handled interrupt_dialog in another thread.",
+            "                 in this case, set property 'interrupt_dialog' to true(default is true)",
+            "and here is an example of event msg:"
+        ],
+        "msgJson_example": {
+            "name": "event_name",
+            "interrupt_dialog": true,
+            "params": {
+                "param1": "value1",
+                "param2": "value2"
+            }
+        },
+        "comments2": [
+            "also, the data obj is optional if no param is needed."
+        ],
+        "comments_end": "#########################################################################################################",
+        "REJECT_INCOMING_CALL": {
+            "name": "REJECT_INCOMING_CALL",
+            "interrupt_dialog": true,
+            "params": {}
+        },
+        "CALL_ENDED": {
+            "name": "CALL_ENDED",
+            "interrupt_dialog": true,
+            "params": {}
+        },
+        "PICK_LIST_ITEM_SELECTED": {
+            "name": "PICK_LIST_ITEM_SELECTED",
+            "interrupt_dialog": false,
+            "params": {
+                "item_ordinal": "int"
+            }
+        },
+        "CANCEL_DIALOG": {
+            "name": "CANCEL_DIALOG",
+            "interrupt_dialog": true,
+            "params": {}
+        },
+        "PTT": {
+            "name": "PTT",
+            "interrupt_dialog": true,
+            "params": {
+                "is_long_press": "boolean"
+            }
+        },
+        "NEXT_PAGE": {
+            "name": "NEXT_PAGE",
+            "interrupt_dialog": false,
+            "params": {}
+        },
+        "PREVIOUS_PAGE": {
+            "name": "PREVIOUS_PAGE",
+            "interrupt_dialog": false,
+            "params": {}
+        },
+        "INCOMING_CALL": {
+            "name": "INCOMING_CALL",
+            "interrupt_dialog": true,
+            "params": {}
+        },
+        "SCROLL_CHANGED": {
+            "name": "SCROLL_CHANGED",
+            "interrupt_dialog": false,
+            "params": {
+                "page_info": {
+                    "start_item_index": "int",
+                    "start_item_ordinal": "int",
+                    "num_of_items": "int",
+                    "total_page_number": "int"
+                }
+            }
+        },
+        "MOCK_RESULT_EVENT": {
+            "name": "MOCK_RESULT_EVENT",
+            "interrupt_dialog": false,
+            "params": {
+                "result": "string"
+            }
+        },
+        "FITNESS_QUERY": {
+            "name": "FITNESS_QUERY",
+            "interrupt_dialog": true,
+            "params": {}
+        },
+        "END_OF_ROUND_SESSION": {
+            "name": "END_OF_ROUND_SESSION",
+            "interrupt_dialog": true,
+            "params": {
+                "is_session_start": "boolean",
+                "screen_context": {
+                    "is_first_round": "boolean"
+                }
+            }
+        }
+    }
+}

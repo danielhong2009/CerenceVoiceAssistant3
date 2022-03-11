@@ -1,0 +1,22 @@
+{
+    "audio_formats":[
+        {
+            "scenario": "AUDIO_SCENARIO_WAKEUP",
+            "type": "input_audio_format",
+            "sample_rate": 16000,
+            "samples_per_channel": 320,
+            "channel_count": 1,
+            "bits":16,
+            "interleaved_format": false
+        },
+        {
+            "scenario": "AUDIO_SCENARIO_ASR",
+            "type": "input_audio_format",
+            "sample_rate": 16000,
+            "samples_per_channel": 320,
+            "channel_count": 1,
+            "bits":16,
+            "interleaved_format": false
+        }
+    ]
+}

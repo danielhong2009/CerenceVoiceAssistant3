@@ -1,0 +1,29 @@
+{
+  "version": "VoConHigh 5.0",
+  "application": {
+    "name": "APP_INCOMING_CALL",
+    "input": [
+      {
+        "type": "asr",
+        "asr": {
+          "search": [
+            {
+              "name": "SEARCH_INCOMING_CALL",
+              "type": "static",
+              "static": {
+                "file_name": "incoming_call.fcf",
+                "do_crc_check": "false"
+              },
+              "vocon_parameters": {
+                "LH_SEARCH_PARAM_TSILENCE": 200,
+                "LH_SEARCH_PARAM_MAXNBEST": 1,
+                "LH_SEARCH_PARAM_ACCURACY": 5000,
+                "0x00d7a258": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

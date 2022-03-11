@@ -1,0 +1,6 @@
+{
+  "enlu": {
+    "model_dir": "../enlu",
+    "init_mode": 5
+  }
+}

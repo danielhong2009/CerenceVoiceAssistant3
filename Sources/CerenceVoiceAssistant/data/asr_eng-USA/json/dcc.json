@@ -1,0 +1,249 @@
+{
+  "version": "VoConHigh 5.0",
+  "dynamic_content_consumer": [
+    {
+      "name": "DCC_CUSTOM_MAIN_WUW",
+      "content": [
+        {
+          "type": "string",
+          "name": "MainWuw_Ortho"
+        }
+      ],
+      "type": "list",
+      "list": {
+        "persist_searchs": "false",
+        "lexicon": {
+          "uses": "clc_enu"
+        },
+        "search": [
+          {
+            "name": "custom_main_wuw_ctx",
+            "acmod": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat",
+            "link": [
+              [
+                {
+                  "type": "content",
+                  "content": {
+                    "clc_category": "normal",
+                    "name": "MainWuw_Ortho"
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "DCC_CUSTOM_SHORTCUT_WUW",
+      "content": [
+        {
+          "type": "string",
+          "name": "ShortcutWuw_Ortho"
+        }
+      ],
+      "type": "list",
+      "list": {
+        "persist_searchs": "false",
+        "lexicon": {
+          "uses": "clc_enu"
+        },
+        "search": [
+          {
+            "name": "custom_shortcut_wuw_ctx",
+            "acmod": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat",
+            "link": [
+              [
+                {
+                  "type": "content",
+                  "content": {
+                    "clc_category": "normal",
+                    "name": "ShortcutWuw_Ortho"
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "DCC_ASR_CUSTOM_MAIN_WUW",
+      "content": [
+        {
+          "type": "string",
+          "name": "MainWuwAsr_Ortho"
+        }
+      ],
+      "type": "list",
+      "list": {
+        "persist_searchs": "false",
+        "lexicon": {
+          "uses": "clc_enu"
+        },
+        "search": [
+          {
+            "name": "asr_custom_main_wuw_ctx",
+            "acmod": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat",
+            "link": [
+              [
+                {
+                  "type": "content",
+                  "content": {
+                    "clc_category": "normal",
+                    "name": "MainWuwAsr_Ortho"
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "DCC_CONTACT",
+      "content": [
+        {
+          "type": "string",
+          "name": "ContactName_Ortho"
+        },
+        {
+          "type": "integer64",
+          "name": "ContactName_ID"
+        }
+      ],
+      "type": "list",
+      "list": {
+        "persist_searchs": "true",
+        "lexicon": {
+          "uses": "clc_enu"
+        },
+        "search": [
+          {
+            "name": "slm_contact",
+            "acmod": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat",
+            "link": [
+              [
+                {
+                  "type": "content",
+                  "content": {
+                    "clc_category": "normal",
+                    "name": "ContactName_Ortho"
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "DCC_CUSTOM_WORDS_ENTRY_NM",
+      "content": [
+        {
+          "type": "string",
+          "name": "EntryName_Ortho"
+        },
+        {
+          "type": "integer64",
+          "name": "EntryName_ID"
+        }
+      ],
+      "type": "list",
+      "list": {
+        "persist_searchs": "false",
+        "lexicon": {
+          "uses": "clc_enu"
+        },
+        "search": [
+          {
+            "name": "asr_custom_words_ctx",
+            "acmod": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat",
+            "link": [
+              [
+                {
+                  "type": "content",
+                  "content": {
+                    "clc_category": "normal",
+                    "name": "EntryName_Ortho"
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "DCC_MUSIC",
+      "content": [
+        {
+          "type": "string",
+          "name": "Title_Ortho"
+        },
+        {
+          "type": "string",
+          "name": "Artist_Ortho"
+        },
+        {
+          "type": "string",
+          "name": "Album_Ortho"
+        }
+      ],
+      "type": "list",
+      "list": {
+        "persist_searchs": "true",
+        "lexicon": {
+          "uses": "clc_enu"
+        },
+        "search": [
+          {
+            "name": "slm_song_name",
+            "acmod": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat",
+            "link": [
+              [
+                {
+                  "type": "content",
+                  "content": {
+                    "clc_category": "normal",
+                    "name": "Title_Ortho"
+                  }
+                }
+              ]
+            ]
+          },
+          {
+            "name": "slm_artist_name",
+            "acmod": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat",
+            "link": [
+              [
+                {
+                  "type": "content",
+                  "content": {
+                    "clc_category": "normal",
+                    "name": "Artist_Ortho"
+                  }
+                }
+              ]
+            ]
+          },
+          {
+            "name": "slm_album_name",
+            "acmod": "acmod6_9000_enu_gen_car_f16_v2_0_0.dat",
+            "link": [
+              [
+                {
+                  "type": "content",
+                  "content": {
+                    "clc_category": "normal",
+                    "name": "Album_Ortho"
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

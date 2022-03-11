@@ -1,0 +1,13 @@
+{
+  "version" : "VoConHigh 5.0",
+  "lexicon" : [{
+    "name" : "clc_enu",
+    "language" :"enu",
+    "clc": {
+      "filename": "clc_enu_mpthreevadml_v6_5_000002.dat",
+      "vocon_parameters": {
+        "LH_CLC_PARAM_NUMBER_OUTPUT_TRANSCRIPTIONS": 5
+      }
+    }
+  }]
+}

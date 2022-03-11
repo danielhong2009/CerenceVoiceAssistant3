@@ -1,0 +1,190 @@
+{
+  "version": "Prompter 1.0",
+  "usecase": [
+    {
+      "name": "default_eng-USA_zoe-ml_embedded-premium_1-0-3_female",
+      "type": "local",
+      "local": {
+        "text_normalization_type": "FITNESS",
+        "voice_config": {
+          "uses": "eng-USA_zoe-ml_embedded-premium_1-0-3_female"
+        },
+        "enabled_markers": "textunit,bookmark",
+        "tuning_files": [
+          {
+            "type": "apdb",
+            "file_path": "../vocalizer/languages/enu/speech/components/apdbvao_tp_zoe-ml_fitness_bet5f22_fitness.dat"
+          },
+          {
+            "type": "dict",
+            "file_path": "../vocalizer/languages/enu/speech/components/userdict_enu_zoe-ml.dcb"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_untyped_post.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_zoe-ml_fitness.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-message.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-address.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-date.rst"
+          },{
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-distance.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-duration.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-media.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-number.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-phone.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-propername.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-radiostation.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-time.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-unit.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_unspecified.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_weather.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_untyped_prep.rst"
+          }
+        ]
+      }
+    },
+    {
+      "name": "sds_eng-USA_zoe-ml_embedded-premium_1-0-3_female",
+      "type": "local",
+      "local": {
+        "text_normalization_type": "FITNESS",
+        "voice_config": {
+          "uses": "eng-USA_zoe-ml_embedded-premium_1-0-3_female"
+        },
+        "enabled_markers": "textunit,bookmark",
+        "tuning_files": [
+          {
+            "type": "apdb",
+            "file_path": "../vocalizer/languages/enu/speech/components/apdbvao_tp_zoe-ml_fitness_bet5f22_fitness.dat"
+          },
+          {
+            "type": "dict",
+            "file_path": "../vocalizer/languages/enu/speech/components/userdict_enu_zoe-ml.dcb"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_untyped_post.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_zoe-ml_fitness.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-message.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-address.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-date.rst"
+          },{
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-distance.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-duration.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-media.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-number.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-phone.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-propername.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-radiostation.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-time.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_cust-unit.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_unspecified.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_weather.rst"
+          },
+          {
+            "type": "rule",
+            "file_path": "../vocalizer/languages/enu/speech/components/userrules_enu_untyped_prep.rst"
+          }
+        ]
+      }
+    }
+  ],
+  "voice_config": [
+    {
+      "name": "eng-USA_zoe-ml_embedded-premium_1-0-3_female",
+      "language": "enu",
+      "voice": "zoe-ml",
+      "vop_version": "1.0.3",
+      "operating_point": "embedded-premium"
+    }
+  ]
+}

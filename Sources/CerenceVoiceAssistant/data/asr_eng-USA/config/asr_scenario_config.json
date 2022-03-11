@@ -1,0 +1,176 @@
+{
+  "asr_scenario": [
+    {
+      "name": "SCENARIO_WAKEUP",
+      "mode": "onboard",
+      "apps": [
+        "APP_WUW"
+      ]
+    },
+    {
+      "name": "SCENARIO_CUSTOM_WORDS",
+      "mode": "onboard",
+      "apps": [
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS"
+      ]
+    },
+    {
+      "name": "SCENARIO_VAD_DETECTION_ONLY",
+      "mode": "onboard",
+      "apps": [
+        "APP_VAD_DETECTION_ONLY"
+      ]
+    },
+    {
+      "name": "SCENARIO_DIAL_CONTACT_CONFIRM",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_DIAL_CONTACT_CONFIRM",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_DIAL_NUMBER_CONFIRM",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_DIAL_NUMBER_CONFIRM",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_DIALING_CONTACT_SMART_LISTENING",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_DIALING_CONTACT_SMART_LISTENING",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_GENERAL_CONFIRM",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_GENERAL_CONFIRM",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_INCOMING_CALL",
+      "mode": "onboard",
+      "apps": [
+        "APP_CUSTOM_WORDS",
+        "APP_INCOMING_CALL"
+      ]
+    },
+    {
+      "name": "SCENARIO_NAV_CONFIRM",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_NAV_CONFIRM",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_PICKLIST_CONTACT_OR_NUMBER",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_TOP_LEVEL_DIAL",
+        "APP_PICKLIST_CONTACT_OR_NUMBER",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_PICKLIST_GENERAL",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_PICKLIST_GENERAL",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_PICKLIST_POI",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_PICKLIST_POI",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_TOP_LEVEL",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_TOP_LEVEL_DIAL",
+      "mode": "hybrid",
+      "apps": [
+        "APP_ONE_X",
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_TOP_LEVEL_DIAL",
+        "APP_DIAL_NUMBER_CONFIRM",
+        "APP_EMERGENCY_CONDITION"
+      ]
+    },
+    {
+      "name": "SCENARIO_SHARING_INFO",
+      "mode": "onboard",
+      "apps": [
+        "APP_ASR_WUW",
+        "APP_CUSTOM_WORDS",
+        "APP_SHARING_INFO"
+      ]
+    },
+    {
+      "name": "SCENARIO_CAR_APPOINTMENT",
+      "mode": "onboard",
+      "apps": [
+        "APP_ASR_WUW",
+        "APP_CAR_APPOINTMENT"
+      ]
+    },
+    {
+      "name": "SCENARIO_FITNESS_POUNDS",
+      "mode": "onboard",
+      "apps": [
+        "APP_FITNESS_POUNDS"
+      ]
+    },
+    {
+      "name": "SCENARIO_FITNESS_REPETITIONS",
+      "mode": "onboard",
+      "apps": [
+        "APP_FITNESS_REPETITIONS"
+      ]
+    }
+  ]
+}

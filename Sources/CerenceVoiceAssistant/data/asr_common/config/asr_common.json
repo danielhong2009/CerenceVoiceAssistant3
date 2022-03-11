@@ -1,0 +1,7 @@
+{
+  "asr_common": {
+    "recognizers": [
+      "recognizer_driver"
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "version": "VoConHigh 5.0",
+  "application": [
+    {
+      "name": "APP_ONE_X",
+      "input": [
+        {
+          "name": "INPUT_ASR",
+          "type": "asr",
+          "asr": {
+            "search": [
+              {
+                "name": "SEARCH_1",
+                "type": "static",
+                "static": {
+                  "file_name": "ctx-slot_eng-USA_vocon_car_202105190733.fcf"
+                },
+                "language_model": [],
+                "vocon_parameters": {
+                  "LH_SEARCH_PARAM_MAXNBEST": 3,
+                  "LH_SEARCH_PARAM_TSILENCE": 300,
+                  "LH_SEARCH_PARAM_ACCURACY": 5000,
+                  "LH_SEARCH_PARAM_INITBEAMWIDTH": 750,
+                  "LH_SEARCH_PARAM_LMFACTOR": 500
+                },
+                "connection": [
+                  {
+                    "expansion_point": "slot:SLM#slot1",
+                    "search": {
+                      "name": "ZeroScore_SLOT1",
+                      "type": "static",
+                      "static": {
+                        "file_name": "ctx-primary_eng-USA_vocon_car_202105121534.fcf"
+                      },
+                      "language_model": [
+                        {
+                          "name": "LM_1",
+                          "type": "static",
+                          "static": {
+                            "file_name": "lm-assistantmessaging_eng-USA_vocon_car_restricted_202105121534.dat"
+                          }
+                        },
+                        {
+                          "name": "LM_4",
+                          "type": "static",
+                          "static": {
+                            "file_name": "lm-wuw_eng-USA_vocon_car_restricted_202105121534.dat"
+                          }
+                        }
+                      ],
+                      "asr_quick_correction": [
+                        {
+                          "name": "AQC1",
+                          "type": "static",
+                          "static": {
+                            "file_name": "aqc-mapping_eng-USA_vocon_car_202105131331.dat"
+                          }
+                        }
+                      ],
+                      "connection": [
+                        {
+                          "expansion_point": "slot:SLM#\\contact-first",
+                          "search": {
+                            "name": "CONTACT",
+                            "type": "dynamic",
+                            "dynamic": {
+                              "dynamic_content_consumer": "DCC_CONTACT",
+                              "search_name": "slm_contact"
+                            }
+                          }
+                        },
+                        {
+                          "expansion_point": "slot:SLM#\\musicsong",
+                          "search": {
+                            "name": "SONG",
+                            "type": "dynamic",
+                            "dynamic": {
+                              "dynamic_content_consumer": "DCC_MUSIC",
+                              "search_name": "slm_song_name"
+                            }
+                          }
+                        },
+                        {
+                          "expansion_point": "slot:SLM#\\musicalbum",
+                          "search": {
+                            "name": "ALBUM",
+                            "type": "dynamic",
+                            "dynamic": {
+                              "dynamic_content_consumer": "DCC_MUSIC",
+                              "search_name": "slm_album_name"
+                            }
+                          }
+                        },
+                        {
+                          "expansion_point": "slot:SLM#\\musicartist",
+                          "search": {
+                            "name": "ARTIST",
+                            "type": "dynamic",
+                            "dynamic": {
+                              "dynamic_content_consumer": "DCC_MUSIC",
+                              "search_name": "slm_artist_name"
+                            }
+                          }
+                        },
+                        {
+                          "expansion_point": "slot:SLM#\\playlist",
+                          "search": {
+                            "name": "PLAYLIST",
+                            "type": "static",
+                            "static": {
+                              "file_name": "playlist_fwd.fcf"
+                            }
+                          }
+                        },
+                        {
+                          "expansion_point": "slot:SLM#\\radiostation",
+                          "search": {
+                            "name": "RADIOSTATION",
+                            "type": "static",
+                            "static": {
+                              "file_name": "radiostation_fwd.fcf"
+                            }
+                          }
+                        },
+                        {
+                          "expansion_point": "slot:SLM#\\appname",
+                          "search": {
+                            "name": "APPNAME",
+                            "type": "static",
+                            "static": {
+                              "file_name": "app_fwd.fcf"
+                            }
+                          }
+                        },
+                        {
+                          "expansion_point": "slot:SLM#\\company",
+                          "search": {
+                            "name": "CONTACT_COMPANY",
+                            "type": "static",
+                            "static": {
+                              "file_name": "contact_company_fwd.fcf"
+                            }
+                          }
+                        },
+                        {
+                          "expansion_point": "slot:SLM#\\brand",
+                          "search": {
+                            "name": "BRAND",
+                            "type": "static",
+                            "static": {
+                              "file_name": "brand_fwd.fcf"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "nlu": [
+      ]
+    }
+  ]
+}
